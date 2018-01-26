@@ -1,4 +1,4 @@
 # **Purpose**
 - This is the source code for my home page.
 ## **My home page**
-- http://www.brucehrwang.com
+- wang2226.github.io 
