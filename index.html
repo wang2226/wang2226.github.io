@@ -21,39 +21,38 @@ html{
 <style>
 
 a:link {
-    color: deeppink;
+    color: gold;
     background-color: transparent;
     text-decoration: none;
 }
 a:visited {
-    color: yellow;
+    color: grey;
     background-color: transparent;
     text-decoration: none;
 }
 a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:active {
     color: lime;
     background-color: transparent;
     text-decoration: underline;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 6px 3px;
-    overflow: hidden;
-    background-color: lightslategrey;
-    position: fixed;
-    top: 0;
-    width: 100%;
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
-li {
-    float: left;
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
 }
 
 li a {
@@ -65,18 +64,18 @@ li a {
 }
 
 li a:hover {
-    background-color: deepskyblue;
+    background-color: transparent;
 }
 
 .active {
-    background-color: darkviolet;
+    background-color: transparent;
 }
 
 </style>
 
 <body>
 
-<ul>
+<ul class="nav">
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="courses.html">Courses at Purdue</a></li>
   <li><a href="project.html">My Projects</a></li>
