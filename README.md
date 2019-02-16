@@ -1,2 +1,1 @@
-# **Purpose**
-- This is the source code for my home page.
+This is the source code for my home page.
