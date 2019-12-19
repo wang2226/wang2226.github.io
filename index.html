@@ -1,196 +1,201 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title> brucehrwang - My little corner on the internet </title>
-<link rel="icon" href="./images/terminal.ico" type="image/x-ico" sizes="16x16">
+  <title> brucehrwang - My little corner on the internet </title>
+  <link rel="icon" href="./images/terminal.ico" type="image/x-ico" sizes="16x16">
 
-<style>
-
-html{
-    background: url(./images/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-</style>
+  <style>
+    html {
+      background: url(./images/background.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </style>
 
 </head>
 
 <style>
-
-a:link {
+  a:link {
     color: lime;
     background-color: transparent;
     text-decoration: underline;
-}
-a:visited {
+  }
+
+  a:visited {
     color: lime;
     background-color: transparent;
     text-decoration: none;
-}
-a:hover {
+  }
+
+  a:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
-}
-a:active {
+  }
+
+  a:active {
     color: white;
     background-color: transparent;
     text-decoration: underline;
-}
+  }
 
-.nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.nav li{
-    display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding:10px;
-}
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 
-li a {
+  .nav li {
+    display: inline;
+  }
+
+  .nav a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  li a {
     display: inline;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+  }
 
-li a:hover {
+  li a:hover {
     background-color: transparent;
-}
+  }
 
-.active {
+  .active {
     background-color: transparent;
-}
-
+  }
 </style>
 
 <body>
 
-<style>
-.string-highlight {
-  color: lime;
-}
+  <style>
+    .string-highlight {
+      color: lime;
+    }
 
-#typewriter {
-  font-size: 120%;
-  margin: 0;
-  font-family: "Courier";
-}
-#typewriter:after {
-  content: "|";
-  color: white;
-  -webkit-animation: blink 500ms linear infinite alternate;
-          animation: blink 500ms linear infinite alternate;
-}
+    #typewriter {
+      font-size: 120%;
+      margin: 0;
+      font-family: "Courier";
+    }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
+    #typewriter:after {
+      content: "|";
+      color: white;
+      -webkit-animation: blink 500ms linear infinite alternate;
+      animation: blink 500ms linear infinite alternate;
+    }
 
-<pre id="typewriter">
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <pre id="typewriter">
 <span class="string-highlight">$ who is brucehrwang?</span>
-<span class="string-highlight">brucehrwang is currently a M.S. student at University of Oregon. He got his B.S. in CS from Purdue University</span>
----------------<span class="string-highlight">a developer who likes to develop web app, iOS / Android app, and games.</span>
+<span class="string-highlight">brucehrwang is a M.S. student at University of Oregon. He got his B.S. in CS from Purdue University in 2019</span>
+---------------<span class="string-highlight">a developer who likes to develop web applications, iOS / Android app, and games.</span>
 ---------------<span class="string-highlight">a creator who likes to take photos and make videos.</span>
 <span class="string-highlight">brucehrwang's research involves using Deep Learning to solve Nautural Language Processing problems.</span>
-<span class="string-highlight">$ Links: </span><a href="https://github.com/wang2226" target="_blank">GitHub</a>  <a href="courses.html" target="_blank">Coursework</a>  <a href="gallery.html" target="_blank">Photography</a> <a href="resume.html" target="_blank">Resume</a>
+<span class="string-highlight">$ Links: </span><a href="https://github.com/wang2226" target="_blank">GitHub</a> <a href="gallery.html" target="_blank">Photography</a> <a href="resume.html" target="_blank">Resume</a>
 <span class="string-highlight">$ </span> </pre>
 
-<script>
-function setupTypewriter(t) {
-    var HTML = t.innerHTML;
+  <script>
+    function setupTypewriter(t) {
+      var HTML = t.innerHTML;
 
-    t.innerHTML = "";
+      t.innerHTML = "";
 
-    var cursorPosition = 0,
+      var cursorPosition = 0,
         tag = "",
         writingTag = false,
         tagOpen = false,
         typeSpeed = 1,
         tempTypeSpeed = 0;
 
-    var type = function() {
+      var type = function() {
 
         if (writingTag === true) {
-            tag += HTML[cursorPosition];
+          tag += HTML[cursorPosition];
         }
 
         if (HTML[cursorPosition] === "<") {
-            tempTypeSpeed = 0;
-            if (tagOpen) {
-                tagOpen = false;
-                writingTag = true;
-            } else {
-                tag = "";
-                tagOpen = true;
-                writingTag = true;
-                tag += HTML[cursorPosition];
-            }
+          tempTypeSpeed = 0;
+          if (tagOpen) {
+            tagOpen = false;
+            writingTag = true;
+          } else {
+            tag = "";
+            tagOpen = true;
+            writingTag = true;
+            tag += HTML[cursorPosition];
+          }
         }
         if (!writingTag && tagOpen) {
-            tag.innerHTML += HTML[cursorPosition];
+          tag.innerHTML += HTML[cursorPosition];
         }
         if (!writingTag && !tagOpen) {
-            if (HTML[cursorPosition] === " ") {
-                tempTypeSpeed = 0;
-            }
-            else {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 5;
-            }
-            t.innerHTML += HTML[cursorPosition];
+          if (HTML[cursorPosition] === " ") {
+            tempTypeSpeed = 0;
+          } else {
+            tempTypeSpeed = (Math.random() * typeSpeed) + 5;
+          }
+          t.innerHTML += HTML[cursorPosition];
         }
         if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 5;
-            writingTag = false;
-            if (tagOpen) {
-                var newSpan = document.createElement("span");
-                t.appendChild(newSpan);
-                newSpan.innerHTML = tag;
-                tag = newSpan.firstChild;
-            }
+          tempTypeSpeed = (Math.random() * typeSpeed) + 5;
+          writingTag = false;
+          if (tagOpen) {
+            var newSpan = document.createElement("span");
+            t.appendChild(newSpan);
+            newSpan.innerHTML = tag;
+            tag = newSpan.firstChild;
+          }
         }
 
         cursorPosition += 1;
         if (cursorPosition < HTML.length - 1) {
-            setTimeout(type, tempTypeSpeed);
+          setTimeout(type, tempTypeSpeed);
         }
 
-    };
+      };
 
-    return {
+      return {
         type: type
-    };
-}
+      };
+    }
 
-var typer = document.getElementById('typewriter');
+    var typer = document.getElementById('typewriter');
 
-typewriter = setupTypewriter(typewriter);
+    typewriter = setupTypewriter(typewriter);
 
-typewriter.type();
-</script>
+    typewriter.type();
+  </script>
 
 </body>
 
