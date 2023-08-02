@@ -31,7 +31,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+	<script>
+         var password = "simba";
+         (function passcodeprotect() {
+            var passcode = prompt("Nick -> Prince -> ?");
+            while (passcode !== password) {
+               alert("Incorrect PassCode");
+               return passcodeprotect();
+            }
+         }());
+         alert("Welcome to my world!");
+    </script>
 
   	<nav id="navbar" class="navbar">
 		  <ul class="nav-menu">
