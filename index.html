@@ -1,198 +1,190 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>brucehrwang - My little corner on the internet</title>
+    <link rel="icon" href="./images/0_2.ico" type="image/x-ico" sizes="16x16" />
 
-<head>
-
-  <title> brucehrwang - My little corner on the internet </title>
-  <link rel="icon" href="./images/0_2.ico" type="image/x-ico" sizes="16x16">
-
-  <style>
-    html {
-      background: url(./images/0_0.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-  </style>
-
-</head>
-
-<style>
-  a:link {
-    color: lime;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: lime;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: white;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  .nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .nav li {
-    display: inline;
-  }
-
-  .nav a {
-    display: inline-block;
-    padding: 10px;
-  }
-
-  li a {
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: transparent;
-  }
-
-  .active {
-    background-color: transparent;
-  }
-</style>
-
-<body>
+    <style>
+      html {
+        background: url(./images/0_0.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    </style>
+  </head>
 
   <style>
-    .string-highlight {
+    a:link {
       color: lime;
+      background-color: transparent;
+      text-decoration: underline;
     }
 
-    #typewriter {
-      font-size: 120%;
-      margin: 0;
-      font-family: "Courier";
+    a:visited {
+      color: lime;
+      background-color: transparent;
+      text-decoration: none;
     }
 
-    #typewriter:after {
-      content: "|";
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
       color: white;
-      -webkit-animation: blink 500ms linear infinite alternate;
-      animation: blink 500ms linear infinite alternate;
+      background-color: transparent;
+      text-decoration: underline;
     }
 
-    @-webkit-keyframes blink {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
+    .nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
-    @keyframes blink {
-      0% {
-        opacity: 0;
-      }
+    .nav li {
+      display: inline;
+    }
 
-      100% {
-        opacity: 1;
-      }
+    .nav a {
+      display: inline-block;
+      padding: 10px;
+    }
+
+    li a {
+      display: inline;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: transparent;
+    }
+
+    .active {
+      background-color: transparent;
     }
   </style>
 
-  <pre id="typewriter">
+  <body>
+    <style>
+      .string-highlight {
+        color: lime;
+      }
+
+      #typewriter {
+        font-size: 120%;
+        margin: 0;
+        font-family: "Courier";
+      }
+
+      #typewriter:after {
+        content: "|";
+        color: white;
+        -webkit-animation: blink 500ms linear infinite alternate;
+        animation: blink 500ms linear infinite alternate;
+      }
+
+      @-webkit-keyframes blink {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <pre id="typewriter">
 <span class="string-highlight">$ ls</span>
-<span class="string-highlight">$ Links: </span> <a href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ" target="_blank">YouTube</a>  <a href="./photography/portfolio.html" target="_blank">Photography</a>   <a href="./blogs/blogs.html" target="_blank">Adventure Blogs</a> <a href="https://brucehrwang.github.io/" target="_blank">Tech Blogs</a>
+<span class="string-highlight">$ Links: </span> <a href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ" target="_blank">YouTube</a>  <a href="./photography/portfolio.html" target="_blank">Photography</a>   <a href="./blogs/blogs.html" target="_blank">Adventure Blogs</a>
 <span class="string-highlight">$ </span> </pre>
 
-  <script>
-    function setupTypewriter(t) {
-      var HTML = t.innerHTML;
+    <script>
+      function setupTypewriter(t) {
+        var HTML = t.innerHTML;
 
-      t.innerHTML = "";
+        t.innerHTML = "";
 
-      var cursorPosition = 0,
-        tag = "",
-        writingTag = false,
-        tagOpen = false,
-        typeSpeed = 1,
-        tempTypeSpeed = 0;
-
-      var type = function() {
-
-        if (writingTag === true) {
-          tag += HTML[cursorPosition];
-        }
-
-        if (HTML[cursorPosition] === "<") {
+        var cursorPosition = 0,
+          tag = "",
+          writingTag = false,
+          tagOpen = false,
+          typeSpeed = 1,
           tempTypeSpeed = 0;
-          if (tagOpen) {
-            tagOpen = false;
-            writingTag = true;
-          } else {
-            tag = "";
-            tagOpen = true;
-            writingTag = true;
+
+        var type = function () {
+          if (writingTag === true) {
             tag += HTML[cursorPosition];
           }
-        }
-        if (!writingTag && tagOpen) {
-          tag.innerHTML += HTML[cursorPosition];
-        }
-        if (!writingTag && !tagOpen) {
-          if (HTML[cursorPosition] === " ") {
+
+          if (HTML[cursorPosition] === "<") {
             tempTypeSpeed = 0;
-          } else {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 5;
+            if (tagOpen) {
+              tagOpen = false;
+              writingTag = true;
+            } else {
+              tag = "";
+              tagOpen = true;
+              writingTag = true;
+              tag += HTML[cursorPosition];
+            }
           }
-          t.innerHTML += HTML[cursorPosition];
-        }
-        if (writingTag === true && HTML[cursorPosition] === ">") {
-          tempTypeSpeed = (Math.random() * typeSpeed) + 5;
-          writingTag = false;
-          if (tagOpen) {
-            var newSpan = document.createElement("span");
-            t.appendChild(newSpan);
-            newSpan.innerHTML = tag;
-            tag = newSpan.firstChild;
+          if (!writingTag && tagOpen) {
+            tag.innerHTML += HTML[cursorPosition];
           }
-        }
+          if (!writingTag && !tagOpen) {
+            if (HTML[cursorPosition] === " ") {
+              tempTypeSpeed = 0;
+            } else {
+              tempTypeSpeed = Math.random() * typeSpeed + 5;
+            }
+            t.innerHTML += HTML[cursorPosition];
+          }
+          if (writingTag === true && HTML[cursorPosition] === ">") {
+            tempTypeSpeed = Math.random() * typeSpeed + 5;
+            writingTag = false;
+            if (tagOpen) {
+              var newSpan = document.createElement("span");
+              t.appendChild(newSpan);
+              newSpan.innerHTML = tag;
+              tag = newSpan.firstChild;
+            }
+          }
 
-        cursorPosition += 1;
-        if (cursorPosition < HTML.length - 1) {
-          setTimeout(type, tempTypeSpeed);
-        }
+          cursorPosition += 1;
+          if (cursorPosition < HTML.length - 1) {
+            setTimeout(type, tempTypeSpeed);
+          }
+        };
 
-      };
+        return {
+          type: type,
+        };
+      }
 
-      return {
-        type: type
-      };
-    }
+      var typer = document.getElementById("typewriter");
 
-    var typer = document.getElementById('typewriter');
+      typewriter = setupTypewriter(typewriter);
 
-    typewriter = setupTypewriter(typewriter);
-
-    typewriter.type();
-  </script>
-
-</body>
-
+      typewriter.type();
+    </script>
+  </body>
 </html>
