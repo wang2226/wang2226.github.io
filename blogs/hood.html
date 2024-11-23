@@ -1,213 +1,257 @@
 <!DOCTYPE html>
 <html>
-<title>Mount Hood</title>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * {
-      box-sizing: border-box;
+  <title>Mount Hood</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        font-size: 20px;
+        background-color: grey;
+        color: #cccccc;
+        height: 75px;
+      }
+
+      ul {
+        position: fixed;
+        right: 10px;
+      }
+
+      ul li {
+        display: inline;
+        padding-right: 30px;
+        font-weight: 500;
+        color: rgb(251, 255, 0);
+      }
+
+      .blog {
+        margin-top: 20px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        font-size: 18px;
+      }
+
+      .post {
+        margin-top: 20px;
+        float: left;
+      }
+
+      .blogHeader {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        float: right;
+      }
+
+      .links li {
+        color: black;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      footer {
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        height: 100px;
+        padding: 20px;
+        background-color: grey;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
+    gtag("js", new Date());
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+    gtag("config", "G-LCVSV9GF0S");
+  </script>
 
-    nav {
-      font-size: 20px;
-      background-color: grey;
-      color: #cccccc;
-      height: 75px;
-    }
+  <body>
+    <div class="blog">
+      <div class="post">
+        <div class="blogHeader">
+          <h1>Hike and Ski at Mt Hood</h1>
+        </div>
+        <div class="blog-body">
+          <p>
+            Summer skiing on Mt Hood had been on my bucket list for a while ever
+            since I knew that it offers year-round skiing. Since I have to get
+            up really early to get the best snow condition, I decide to drive up
+            to Hood, hike and camp for the night. For the hike, I decide to hike
+            up to Illumination rock, which is a saddle sitting below the summit.
+            Even though it is late June, the moutain is still covered in deep
+            snow and ice, hiking up anywhere pass the lodge requires crampons. I
+            started my hike from the lodge, following the climber's trail. The
+            hike is pretty straight forward, just keep going up along the ski
+            lifts right out of the ski area boundary. I started out around 6,000
+            ft, it was pretty warm, so I have shorts on and traverse the
+            snowfield.
+          </p>
+          <figure>
+            <img src="./images/hood/start.jpeg" class="center" />
+            <figcaption align="center">
+              The hike started from the lodge.
+            </figcaption>
+          </figure>
 
-    ul {
-      position: fixed;
-      right: 10px;
-    }
+          <figure>
+            <img src="./images/hood/deep.jpeg" class="center" />
+            <figcaption align="center">
+              The moutain is still covered in deep snow.
+            </figcaption>
+          </figure>
 
-    ul li {
-      display: inline;
-      padding-right: 30px;
-      font-weight: 500;
-      color: rgb(251, 255, 0);
-    }
+          <p>
+            After gained about 1,500 ft elevation, the temperature started to
+            drop and the slope got steeper. I put on pants and crampons. The
+            view to Mt Jefferson was amazing. I love these snow capped
+            volcanoes, you can see miles from them. Along the trail, I found a
+            container full of salt. It turns out those are rock salt, the salt
+            works by essentially melting the snow crystals at the very top of
+            the ski surface, creating a slurry that quickly refreezes as a
+            smoother, faster skiing surface. The snow almost instantly becomes
+            less “grabby.” The rock salt is a mineral which exists naturally and
+            does not affect the environment. That's the secret of year-round
+            skiing at Hood.
+          </p>
 
-    .blog {
-      margin-top: 20px;
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 400px;
-      font-size: 18px;
-    }
+          <figure>
+            <img src="./images/hood/back.jpeg" class="center" />
+            <figcaption align="center">
+              Look back to the parking lot.
+            </figcaption>
+          </figure>
 
-    .post {
-      margin-top: 20px;
-      float: left;
-    }
+          <figure>
+            <img src="./images/hood/climber.jpeg" class="center" />
+            <figcaption align="center">Follow the climber's trail.</figcaption>
+          </figure>
 
-    .blogHeader {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+          <figure>
+            <img src="./images/hood/jefferson.jpeg" class="center" />
+            <figcaption align="center">Mt Jefferson from Hood.</figcaption>
+          </figure>
 
-    .links {
-      float: right;
-    }
+          <figure>
+            <img src="./images/hood/salt.jpeg" class="center" />
+            <figcaption align="center">
+              Timberline lodge uses rock salt to make the snow smoother.
+            </figcaption>
+          </figure>
 
-    .links li {
-      color: black;
-    }
+          <p>
+            After a long and streneous climb, I passed the last ski lift of
+            Palmer and reached the saddle of Illumination Rock. I am really glad
+            I have my mountaineering and crampons, they definitely made the
+            steep section a lot easier. From there, I started descending and got
+            back to my car around 6:30. I camped at Still Creek for the night.
+          </p>
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+          <figure>
+            <img src="./images/hood/lift.jpeg" class="center" />
+            <figcaption align="center">Last ski lift of Palmer.</figcaption>
+          </figure>
 
-    footer {
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 30px;
-      height: 100px;
-      padding: 20px;
-      background-color: grey;
-      text-align: center;
-    }
-  </style>
-</head>
+          <figure>
+            <img src="./images/hood/view.jpeg" class="center" />
+            <figcaption align="center">
+              The Cascades and Mt Jefferson.
+            </figcaption>
+          </figure>
 
-<body>
-  <div class="blog">
-    <div class="post">
-      <div class="blogHeader">
-        <h1>Hike and Ski at Mt Hood</h1>
-      </div>
-      <div class="blog-body">
-        <p>
-          Summer skiing on Mt Hood had been on my bucket list for a while ever since I knew that it offers year-round skiing.
-          Since I have to get up really early to get the best snow condition, I decide to drive up to Hood, hike and camp for the night.
-          For the hike, I decide to hike up to Illumination rock, which is a saddle sitting below the summit.
-          Even though it is late June, the moutain is still covered in deep snow and ice, hiking up anywhere pass the lodge requires crampons.
-          I started my hike from the lodge, following the climber's trail.
-          The hike is pretty straight forward, just keep going up along the ski lifts right out of the ski area boundary.
-          I started out around 6,000 ft, it was pretty warm, so I have shorts on and traverse the snowfield.
-        </p>
-        <figure>
-          <img src="./images/hood/start.jpeg" class="center">
-          <figcaption align="center">The hike started from the lodge.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/alpenglow.jpeg" class="center" />
+            <figcaption align="center">Alpenglow at Hood.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/hood/deep.jpeg" class="center">
-          <figcaption align="center">The moutain is still covered in deep snow.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/sunset.jpeg" class="center" />
+            <figcaption align="center">Sunset at Hood.</figcaption>
+          </figure>
 
-        <p>
-          After gained about 1,500 ft elevation, the temperature started to drop and the slope got steeper. I put on pants and crampons.
-          The view to Mt Jefferson was amazing. I love these snow capped volcanoes, you can see miles from them.
-          Along the trail, I found a container full of salt.
-          It turns out those are rock salt, the salt works by essentially melting the snow crystals at the very top of the ski surface, creating a slurry that quickly refreezes as a smoother, faster skiing surface.
-          The snow almost instantly becomes less “grabby.” The rock salt is a mineral which exists naturally and does not affect the environment.
-          That's the secret of year-round skiing at Hood.
-        </p>
+          <p>
+            I woke up around 4:50 the next morning and drove to the parking lot
+            of Timberline Lodge. Had breakfast and a cup of coffee while
+            watching the sunrise at Hood. The lift ticket office opened at 6:30,
+            and the lift opened at 7. To my surprise, it was the longest lift
+            line I have ever seen. There are many camps from all over the
+            country. I waited for about 40 minutes to get on my first chair.
+          </p>
 
-        <figure>
-          <img src="./images/hood/back.jpeg" class="center">
-          <figcaption align="center">Look back to the parking lot.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/coffee.jpeg" class="center" />
+            <figcaption align="center">
+              Beautiful view while drinking my coffee.
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/hood/climber.jpeg" class="center">
-          <figcaption align="center">Follow the climber's trail.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/first.jpeg" class="center" />
+            <figcaption align="center">My first chair up.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/hood/jefferson.jpeg" class="center">
-          <figcaption align="center">Mt Jefferson from Hood.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/ski.jpeg" class="center" />
+            <figcaption align="center">
+              My first time skiing in the summer.
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/hood/salt.jpeg" class="center">
-          <figcaption align="center">Timberline lodge uses rock salt to make the snow smoother.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/hood/line.jpeg" class="center" />
+            <figcaption align="center">
+              The longest lift I have ever seen.
+            </figcaption>
+          </figure>
 
-        <p>
-          After a long and streneous climb, I passed the last ski lift of Palmer and reached the saddle of Illumination Rock.
-          I am really glad I have my mountaineering and crampons, they definitely made the steep section a lot easier.
-          From there, I started descending and got back to my car around 6:30. I camped at Still Creek for the night.
-        </p>
+          <figure>
+            <img src="./images/hood/slush.jpeg" class="center" />
+            <figcaption align="center">Slushy snow at the bottom.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/hood/lift.jpeg" class="center">
-          <figcaption align="center">Last ski lift of Palmer.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/view.jpeg" class="center">
-          <figcaption align="center">The Cascades and Mt Jefferson.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/alpenglow.jpeg" class="center">
-          <figcaption align="center">Alpenglow at Hood.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/sunset.jpeg" class="center">
-          <figcaption align="center">Sunset at Hood.</figcaption>
-        </figure>
-
-        <p>
-          I woke up around 4:50 the next morning and drove to the parking lot of Timberline Lodge.
-          Had breakfast and a cup of coffee while watching the sunrise at Hood.
-          The lift ticket office opened at 6:30, and the lift opened at 7.
-          To my surprise, it was the longest lift line I have ever seen. There are many camps from all over the country.
-          I waited for about 40 minutes to get on my first chair.
-        </p>
-
-        <figure>
-          <img src="./images/hood/coffee.jpeg" class="center">
-          <figcaption align="center">Beautiful view while drinking my coffee.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/first.jpeg" class="center">
-          <figcaption align="center">My first chair up.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/ski.jpeg" class="center">
-          <figcaption align="center">My first time skiing in the summer.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/line.jpeg" class="center">
-          <figcaption align="center">The longest lift I have ever seen.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/hood/slush.jpeg" class="center">
-          <figcaption align="center">Slushy snow at the bottom.</figcaption>
-        </figure>
-
-        <p>
-          For summer skiing, only two runs are open, magic mile, which is a blue run, the other one is Palmer, which is a black run.
-          I don't know if it is because of summer skiing or something else, the blue run feels like a green, and the black run feels like an easy blue.
-          The snow was pretty good up top, but it got slushy towards the bottom. I skied 6 runs, mainly because the lift line was really long.
-          Overall, it was quite a unique experience. Hood never disappoints me.
-        </p>
-
+          <p>
+            For summer skiing, only two runs are open, magic mile, which is a
+            blue run, the other one is Palmer, which is a black run. I don't
+            know if it is because of summer skiing or something else, the blue
+            run feels like a green, and the black run feels like an easy blue.
+            The snow was pretty good up top, but it got slushy towards the
+            bottom. I skied 6 runs, mainly because the lift line was really
+            long. Overall, it was quite a unique experience. Hood never
+            disappoints me.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>

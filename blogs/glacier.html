@@ -1,212 +1,235 @@
 <!DOCTYPE html>
 <html>
-<title>Bike Goint-to-the-Sun Road</title>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * {
-      box-sizing: border-box;
+  <title>Bike Goint-to-the-Sun Road</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        font-size: 20px;
+        background-color: grey;
+        color: #cccccc;
+        height: 75px;
+      }
+
+      ul {
+        position: fixed;
+        right: 10px;
+      }
+
+      ul li {
+        display: inline;
+        padding-right: 30px;
+        font-weight: 500;
+        color: rgb(251, 255, 0);
+      }
+
+      .blog {
+        margin-top: 20px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        font-size: 18px;
+      }
+
+      .post {
+        margin-top: 20px;
+        float: left;
+      }
+
+      .blogHeader {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        float: right;
+      }
+
+      .links li {
+        color: black;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      footer {
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        height: 100px;
+        padding: 20px;
+        background-color: grey;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
+    gtag("js", new Date());
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+    gtag("config", "G-LCVSV9GF0S");
+  </script>
 
-    nav {
-      font-size: 20px;
-      background-color: grey;
-      color: #cccccc;
-      height: 75px;
-    }
+  <body>
+    <div class="blog">
+      <div class="post">
+        <div class="blogHeader">
+          <h1>Bike Going-to-the-Sun Road</h1>
+        </div>
+        <div class="blog-body">
+          <p>
+            Biked the iconic Going-to-the-Sun road in Glacier National Park.
+            Every year, the park road is open exclusively to bikers and hikers
+            from late June to early July when the plow crew is still removing
+            snow from the road at higher elevation. My trip clocked in at 23.22
+            miles and 1,827ft of elevation.
+          </p>
 
-    ul {
-      position: fixed;
-      right: 10px;
-    }
+          <figure>
+            <img src="./images/glacier/strava.jpeg" class="center" />
+            <figcaption align="center">Stats from Strava.</figcaption>
+          </figure>
 
-    ul li {
-      display: inline;
-      padding-right: 30px;
-      font-weight: 500;
-      color: rgb(251, 255, 0);
-    }
+          <figure>
+            <img src="./images/glacier/cabin.jpeg" class="center" />
+            <figcaption align="center">
+              Cozy cabin at Lake McDonald Lodge.
+            </figcaption>
+          </figure>
 
-    .blog {
-      margin-top: 20px;
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 400px;
-      font-size: 18px;
-    }
+          <figure>
+            <img src="./images/glacier/view_1.jpeg" class="center" />
+            <figcaption align="center">
+              Beautiful view from the road.
+            </figcaption>
+          </figure>
 
-    .post {
-      margin-top: 20px;
-      float: left;
-    }
+          <figure>
+            <img src="./images/glacier/view_2.jpeg" class="center" />
+            <figcaption align="center">Fresh snow melt.</figcaption>
+          </figure>
 
-    .blogHeader {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+          <figure>
+            <img src="./images/glacier/view_3.jpeg" class="center" />
+            <figcaption align="center">Start climbing up.</figcaption>
+          </figure>
 
-    .links {
-      float: right;
-    }
+          <figure>
+            <img src="./images/glacier/morning.jpeg" class="center" />
+            <figcaption align="center">
+              Day 2 - arriving at the parking lot.
+            </figcaption>
+          </figure>
 
-    .links li {
-      color: black;
-    }
+          <figure>
+            <img src="./images/glacier/ready.jpeg" class="center" />
+            <figcaption align="center">
+              Getting ready and eat some breakfast.
+            </figcaption>
+          </figure>
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+          <figure>
+            <img src="./images/glacier/view_4.jpeg" class="center" />
+            <figcaption align="center">My trustworthy road bike.</figcaption>
+          </figure>
 
-    footer {
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 30px;
-      height: 100px;
-      padding: 20px;
-      background-color: grey;
-      text-align: center;
-    }
-  </style>
-</head>
+          <figure>
+            <img src="./images/glacier/bear_1.jpeg" class="center" />
+            <figcaption align="center">
+              Saw a tennager bear coming down the mountain.
+            </figcaption>
+          </figure>
 
-<body>
-  <div class="blog">
-    <div class="post">
-      <div class="blogHeader">
-        <h1>Bike Going-to-the-Sun Road</h1>
-      </div>
-      <div class="blog-body">
-        <p>
-          Biked the iconic Going-to-the-Sun road in Glacier National Park. Every year, the park road is open exclusively
-          to bikers and hikers from late June to early July when the plow crew is still removing snow from the road 
-          at higher elevation. My trip clocked in at 23.22 miles and 1,827ft of elevation.
-        </p>
+          <figure>
+            <img src="./images/glacier/bear_2.jpeg" class="center" />
+            <figcaption align="center">Close shot of Mr. Bear.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/strava.jpeg" class="center">
-          <figcaption align="center">Stats from Strava.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/bike_1.jpeg" class="center" />
+            <figcaption align="center">Taking a break.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/cabin.jpeg" class="center">
-          <figcaption align="center">Cozy cabin at Lake McDonald Lodge.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/view_5.jpeg" class="center" />
+            <figcaption align="center">Mt Reynolds.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/view_1.jpeg" class="center">
-          <figcaption align="center">Beautiful view from the road.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/view_6.jpeg" class="center" />
+            <figcaption align="center">Close shot of Mt Reynolds.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/view_2.jpeg" class="center">
-          <figcaption align="center">Fresh snow melt.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/bike_2.jpeg" class="center" />
+            <figcaption align="center">Taking a break again.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/view_3.jpeg" class="center">
-          <figcaption align="center">Start climbing up.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/view_7.jpeg" class="center" />
+            <figcaption align="center">
+              Incredible amount of snow even in July.
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/morning.jpeg" class="center">
-          <figcaption align="center">Day 2 - arriving at the parking lot.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/end.jpeg" class="center" />
+            <figcaption align="center">Reached the end.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/ready.jpeg" class="center">
-          <figcaption align="center">Getting ready and eat some breakfast.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/selfie.jpeg" class="center" />
+            <figcaption align="center">Taking a selfie.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/view_4.jpeg" class="center">
-          <figcaption align="center">My trustworthy road bike.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/sit.jpeg" class="center" />
+            <figcaption align="center">On top of the world.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/bear_1.jpeg" class="center">
-          <figcaption align="center">Saw a tennager bear coming down the mountain.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/me.jpeg" class="center" />
+            <figcaption align="center">Mission complete.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/bear_2.jpeg" class="center">
-          <figcaption align="center">Close shot of Mr. Bear.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/glacier/view_8.jpeg" class="center" />
+            <figcaption align="center">View at the top.</figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/glacier/bike_1.jpeg" class="center">
-          <figcaption align="center">Taking a break.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/view_5.jpeg" class="center">
-          <figcaption align="center">Mt Reynolds.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/view_6.jpeg" class="center">
-          <figcaption align="center">Close shot of Mt Reynolds.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/bike_2.jpeg" class="center">
-          <figcaption align="center">Taking a break again.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/view_7.jpeg" class="center">
-          <figcaption align="center">Incredible amount of snow even in July.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/end.jpeg" class="center">
-          <figcaption align="center">Reached the end.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/selfie.jpeg" class="center">
-          <figcaption align="center">Taking a selfie.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/sit.jpeg" class="center">
-          <figcaption align="center">On top of the world.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/me.jpeg" class="center">
-          <figcaption align="center">Mission complete.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/view_8.jpeg" class="center">
-          <figcaption align="center">View at the top.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/glacier/view_9.jpeg" class="center">
-          <figcaption align="center">Increcible view.</figcaption>
-        </figure>
-        
-
-
+          <figure>
+            <img src="./images/glacier/view_9.jpeg" class="center" />
+            <figcaption align="center">Increcible view.</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>

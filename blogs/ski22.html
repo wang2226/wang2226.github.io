@@ -1,165 +1,193 @@
 <!DOCTYPE html>
 <html>
-<title>Ski Montana</title>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * {
-      box-sizing: border-box;
+  <title>Ski Montana</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        font-size: 20px;
+        background-color: grey;
+        color: #cccccc;
+        height: 75px;
+      }
+
+      ul {
+        position: fixed;
+        right: 10px;
+      }
+
+      ul li {
+        display: inline;
+        padding-right: 30px;
+        font-weight: 500;
+        color: rgb(251, 255, 0);
+      }
+
+      .blog {
+        margin-top: 20px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        font-size: 18px;
+      }
+
+      .post {
+        margin-top: 20px;
+        float: left;
+      }
+
+      .blogHeader {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        float: right;
+      }
+
+      .links li {
+        color: black;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      footer {
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        height: 100px;
+        padding: 20px;
+        background-color: grey;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
+    gtag("js", new Date());
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+    gtag("config", "G-LCVSV9GF0S");
+  </script>
 
-    nav {
-      font-size: 20px;
-      background-color: grey;
-      color: #cccccc;
-      height: 75px;
-    }
+  <body>
+    <div class="blog">
+      <div class="post">
+        <div class="blogHeader">
+          <h1>22/23 Ski Season</h1>
+        </div>
+        <div class="blog-body">
+          <p>
+            This is a seasonal tribute to my 2022 ski season living in Bozeman,
+            Montana. I had 69 ski days for the season, and skied over 700 miles,
+            629,000 ft of vert. During this season, I skied my very first double
+            black run off the ridge at Bridger. I also experienced some dreamy
+            powder days that put a big smile on my face.
+          </p>
+          <figure>
+            <img src="./images/ski22/stat.jpeg" class="center" />
+            <figcaption align="center">
+              My stats for the 2022 ski season.
+            </figcaption>
+          </figure>
 
-    ul {
-      position: fixed;
-      right: 10px;
-    }
+          <figure>
+            <img src="./images/ski22/view.jpeg" class="center" />
+            <figcaption align="center">
+              Beautiful view from the top of Bridger chair.
+            </figcaption>
+          </figure>
 
-    ul li {
-      display: inline;
-      padding-right: 30px;
-      font-weight: 500;
-      color: rgb(251, 255, 0);
-    }
+          <figure>
+            <img src="./images/ski22/hike.jpeg" class="center" />
+            <figcaption align="center">
+              A lot of the runs at Bridger require hiking to get to.
+            </figcaption>
+          </figure>
 
-    .blog {
-      margin-top: 20px;
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 400px;
-      font-size: 18px;
-    }
+          <figure>
+            <img src="./images/ski22/powder.jpeg" class="center" />
+            <figcaption align="center">Powder day selfie.</figcaption>
+          </figure>
 
-    .post {
-      margin-top: 20px;
-      float: left;
-    }
+          <figure>
+            <img src="./images/ski22/chute.jpeg" class="center" />
+            <figcaption align="center">Blue bird day at Bridger.</figcaption>
+          </figure>
 
-    .blogHeader {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+          <figure>
+            <img src="./images/ski22/gultch.jpeg" class="center" />
+            <figcaption align="center">Avalanche Gultch at Bridger.</figcaption>
+          </figure>
 
-    .links {
-      float: right;
-    }
+          <figure>
+            <img src="./images/ski22/avalance.jpeg" class="center" />
+            <figcaption align="center">
+              Avalanche debris in spring at Bridger.
+            </figcaption>
+          </figure>
 
-    .links li {
-      color: black;
-    }
+          <figure>
+            <img src="./images/ski22/tour.jpeg" class="center" />
+            <figcaption align="center">
+              Ski tour selfie after the season ends at Bridger.
+            </figcaption>
+          </figure>
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+          <figure>
+            <img src="./images/ski22/deep.jpeg" class="center" />
+            <figcaption align="center">Deep day at Red Lodge.</figcaption>
+          </figure>
 
-    footer {
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 30px;
-      height: 100px;
-      padding: 20px;
-      background-color: grey;
-      text-align: center;
-    }
-  </style>
-</head>
+          <figure>
+            <img src="./images/ski22/fresh.jpeg" class="center" />
+            <figcaption align="center">
+              Fresh powder after an April storm at Red Lodge.
+            </figcaption>
+          </figure>
 
-<body>
-  <div class="blog">
-    <div class="post">
-      <div class="blogHeader">
-        <h1>22/23 Ski Season</h1>
-      </div>
-      <div class="blog-body">
-        <p>
-          This is a seasonal tribute to my 2022 ski season living in Bozeman, Montana.
-          I had 69 ski days for the season, and skied over 700 miles, 629,000 ft of vert.
-          During this season, I skied my very first double black run off the ridge at Bridger.
-          I also experienced some dreamy powder days that put a big smile on my face.
-        </p>
-        <figure>
-          <img src="./images/ski22/stat.jpeg" class="center">
-          <figcaption align="center">My stats for the 2022 ski season.</figcaption>
-        </figure>
+          <figure>
+            <img src="./images/ski22/closing.jpeg" class="center" />
+            <figcaption align="center">
+              Closing day party at Big Sky.
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img src="./images/ski22/view.jpeg" class="center">
-          <figcaption align="center">Beautiful view from the top of Bridger chair.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/hike.jpeg" class="center">
-          <figcaption align="center">A lot of the runs at Bridger require hiking to get to.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/powder.jpeg" class="center">
-          <figcaption align="center">Powder day selfie.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/chute.jpeg" class="center">
-          <figcaption align="center">Blue bird day at Bridger.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/gultch.jpeg" class="center">
-          <figcaption align="center">Avalanche Gultch at Bridger.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/avalance.jpeg" class="center">
-          <figcaption align="center">Avalanche debris in spring at Bridger.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/tour.jpeg" class="center">
-          <figcaption align="center">Ski tour selfie after the season ends at Bridger.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/deep.jpeg" class="center">
-          <figcaption align="center">Deep day at Red Lodge.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/fresh.jpeg" class="center">
-          <figcaption align="center">Fresh powder after an April storm at Red Lodge.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/closing.jpeg" class="center">
-          <figcaption align="center">Closing day party at Big Sky.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="./images/ski22/beehive.jpeg" class="center">
-          <figcaption align="center">Ski tour at Beehive Basin in May.</figcaption>
-        </figure>
-
+          <figure>
+            <img src="./images/ski22/beehive.jpeg" class="center" />
+            <figcaption align="center">
+              Ski tour at Beehive Basin in May.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>
