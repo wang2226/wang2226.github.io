@@ -1,276 +1,337 @@
 <!DOCTYPE html>
-<html>
-  <title>Wheeler Peak</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Summiting Wheeler Peak in Nevada</title>
+    <meta
+      name="description"
+      content="Camping at the 10,000-foot trailhead and climbing Wheeler Peak, crossing a scree field and scrambling the final steep stretch to a 13er summit."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Summiting Wheeler Peak in Nevada" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/wheeler/cover.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Summiting Wheeler Peak in Nevada</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              Wheeler Peak came onto my radar last summer while I was traveling
-              U.S. 50, a.k.a. the Loneliest Road in America. I did not reach the
-              summit that year because I arrived really late and only had time
-              to hike to Stella Lake. This year, I came back to finish what I
-              started. Wheeler is probably one of the most accessible 13ers: the
-              trailhead sits around 10,000 ft, almost at the tree line. I camped
-              in the back of my car at the trailhead. It was my first time
-              sleeping at such a high elevation, and I had to crack the front
-              windows for ventilation because I was having a hard time
-              breathing inside the car.
-            </p>
-          </center>
+      </div>
+    </header>
 
-          <figure>
-            <img src="./images/wheeler/first.jpeg" class="center" />
-            <figcaption align="center">
-              First glimpse of Wheeler Peak.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/wheeler/sunset.jpeg" class="center" />
-            <figcaption align="center">Sunset at Wheeler Peak.</figcaption>
-          </figure>
-
-          <center>
-            <p style="width: 900px; text-align: left">
-            The sun woke me around 6:30. I ate some breakfast, packed all my
-            gear, and headed for the summit. The first section climbs gradually
-            toward the tree line. After about 2.1 miles, I finally cleared the
-            trees. By that point, however, I had gained only about 1,000
-            vertical feet, which meant the rest of the trail was going to be
-            really steep.
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Summiting Wheeler Peak in Nevada</h1>
+          <p class="post-meta">
+            Great Basin National Park, Nevada · July 3, 2021
           </p>
-          </center>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            Wheeler Peak came onto my radar last summer while I was traveling U.S.
+            50, a.k.a. the Loneliest Road in America. I did not reach the summit
+            that year because I arrived really late and only had time to hike to
+            Stella Lake. This year, I came back to finish what I started. Wheeler
+            is probably one of the most accessible 13ers: the trailhead sits
+            around 10,000 ft, almost at the tree line. I camped in the back of my
+            car at the trailhead. It was my first time sleeping at such a high
+            elevation, and I had to crack the front windows for ventilation
+            because I was having a hard time breathing inside the car.
+          </p>
 
           <figure>
-            <img src="./images/wheeler/head.jpeg" class="center" />
-            <figcaption align="center">Wheeler Peak trailhead.</figcaption>
+            <img
+              src="./images/wheeler/first.jpeg"
+              alt="Wheeler Peak seen for the first time on arrival"
+              fetchpriority="high"
+            />
+            <figcaption>First glimpse of Wheeler Peak.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/aspen.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/wheeler/sunset.jpeg"
+              alt="Evening light on the mountain the night before the climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Sunset at Wheeler Peak.</figcaption>
+          </figure>
+
+          <p>
+            The sun woke me around 6:30. I ate some breakfast, packed all my gear,
+            and headed for the summit. The first section climbs gradually toward
+            the tree line. After about 2.1 miles, I finally cleared the trees. By
+            that point, however, I had gained only about 1,000 vertical feet, which
+            meant the rest of the trail was going to be really steep.
+          </p>
+
+          <figure>
+            <img
+              src="./images/wheeler/head.jpeg"
+              alt="The trailhead sign at the start of the route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Wheeler Peak trailhead.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/wheeler/aspen.jpeg"
+              alt="A stand of aspens along the lower trail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The first section winds through this aspen forest.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/treeline.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/wheeler/treeline.jpeg"
+              alt="Open ground above the last trees with the peak ahead"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               I finally cleared the trees, and the summit came into view.
             </figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
+          <p>
             Beyond the tree line, the trail crossed a seemingly endless scree
-            field. To reach the summit, I had to traverse a ridge and then
-            scramble the rest of the way up. The scree field was pretty
-            technical, and careful footing was essential because nothing beneath
-            my feet felt stable. Once I climbed above 11,000 ft, I could feel the
-            elevation taking a toll on my body. I slowed down and had trouble
-            breathing smoothly. The trail kept getting steeper, and the summit
-            began to feel impossible to reach.
+            field. To reach the summit, I had to traverse a ridge and then scramble
+            the rest of the way up. The scree field was pretty technical, and
+            careful footing was essential because nothing beneath my feet felt
+            stable. Once I climbed above 11,000 ft, I could feel the elevation
+            taking a toll on my body. I slowed down and had trouble breathing
+            smoothly. The trail kept getting steeper, and the summit began to feel
+            impossible to reach.
           </p>
-          </center>
 
           <figure>
-            <img src="./images/wheeler/scree.jpeg" class="center" />
-            <figcaption align="center">
-              Traversing the ridge across a scree field.
-            </figcaption>
+            <img
+              src="./images/wheeler/scree.jpeg"
+              alt="Loose rock covering the ridge route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Traversing the ridge across a scree field.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/lookback.jpeg" class="center" />
-            <figcaption align="center">
-              Looking back across the endless desert.
-            </figcaption>
+            <img
+              src="./images/wheeler/lookback.jpeg"
+              alt="The dry basin stretching out far below the ridge"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Looking back across the endless desert.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/steep.jpeg" class="center" />
-            <figcaption align="center">The summit still looked so far away.</figcaption>
+            <img
+              src="./images/wheeler/steep.jpeg"
+              alt="The steep upper mountain still a long way above the trail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The summit still looked so far away.</figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-            When I finally reached the end of the ridge, the summit looked
-            within reach. I still had 1,000 vertical feet to go, though, and the
-            terrain ahead was really steep and technical. I took a longer break
-            and ate a fruit bar and an energy gel to prepare for the final push.
-            The last stretch required steep scrambling, and about 100 ft below
-            the summit, I lost the trail. I had to do some wild scrambling over
-            loose boulders, which was pretty nerve-racking. At the summit, I
-            found a mailbox containing a logbook and a sign. Standing on top of
-            a 13er felt like a real accomplishment.
+          <p>
+            When I finally reached the end of the ridge, the summit looked within
+            reach. I still had 1,000 vertical feet to go, though, and the terrain
+            ahead was really steep and technical. I took a longer break and ate a
+            fruit bar and an energy gel to prepare for the final push. The last
+            stretch required steep scrambling, and about 100 ft below the summit, I
+            lost the trail. I had to do some wild scrambling over loose boulders,
+            which was pretty nerve-racking. At the summit, I found a mailbox
+            containing a logbook and a sign. Standing on top of a 13er felt like a
+            real accomplishment.
           </p>
-          </center>
 
           <figure>
-            <img src="./images/wheeler/see.jpeg" class="center" />
-            <figcaption align="center">At the end of the ridge.</figcaption>
+            <img
+              src="./images/wheeler/see.jpeg"
+              alt="Where the ridge tops out below the final climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>At the end of the ridge.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/fruit.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/wheeler/fruit.jpeg"
+              alt="A snack break on the rocks before the last stretch"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Enjoying my fruit bar before the final push to the summit.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/flower.jpeg" class="center" />
-            <figcaption align="center">
-              I was surprised that wildflowers could survive at this
-              elevation.
+            <img
+              src="./images/wheeler/flower.jpeg"
+              alt="Small wildflowers growing among high-altitude rocks"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              I was surprised that wildflowers could survive at this elevation.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/glacier.jpeg" class="center" />
-            <figcaption align="center">A glacier beside the ridge.</figcaption>
+            <img
+              src="./images/wheeler/glacier.jpeg"
+              alt="A patch of ice tucked below the ridgeline"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A glacier beside the ridge.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/scramble.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/wheeler/scramble.jpeg"
+              alt="Loose boulders on the steep final section"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The final push to the summit required some technical scrambling.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/mailbox.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/wheeler/mailbox.jpeg"
+              alt="The mailbox holding the logbook at the top"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               A mailbox for those who successfully reach the summit.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/summit.jpeg" class="center" />
-            <figcaption align="center">My summit photo.</figcaption>
+            <img
+              src="./images/wheeler/summit.jpeg"
+              alt="Me standing on top of the peak"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>My summit photo.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/view.jpeg" class="center" />
-            <figcaption align="center">View from the summit.</figcaption>
+            <img
+              src="./images/wheeler/view.jpeg"
+              alt="The landscape spread out below the high point"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>View from the summit.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/snake.jpeg" class="center" />
-            <figcaption align="center">
-              The highest point in the Snake Range.
-            </figcaption>
+            <img
+              src="./images/wheeler/snake.jpeg"
+              alt="The summit sign marking the range's high point"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The highest point in the Snake Range.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/wheeler/sign.jpeg" class="center" />
-            <figcaption align="center">
-              Signing my entry in the logbook.
-            </figcaption>
+            <img
+              src="./images/wheeler/sign.jpeg"
+              alt="Writing my name in the summit register"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Signing my entry in the logbook.</figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

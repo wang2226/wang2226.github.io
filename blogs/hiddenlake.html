@@ -1,231 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hidden Lake Lookout</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
+    <title>Hidden Lake Lookout</title>
+    <meta
+      name="description"
+      content="An 8-mile round trip in Washington’s North Cascades climbing roughly 3,300 feet through forest, wildflower meadows, and rocky alpine slopes to the historic fire lookout above Hidden Lake."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hidden Lake Lookout" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/hidden/lake1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
-      ul {
-        position: fixed;
-        right: 10px;
-      }
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 18px;
-      }
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("js", new Date());
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Hidden Lake Lookout</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
+    </header>
 
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              The Hidden Lake Lookout Trail in Washington’s North Cascades is an
-              unforgettable 8-mile round trip with roughly 3,300 feet of
-              elevation gain, topping out near 6,900 feet. The route starts in a
-              cool forest, climbs through wildflower meadows, and opens onto
-              rocky alpine slopes where streams and snowfields linger early in
-              the season. Higher up, the trees give way to granite and wide-open
-              views before you reach the historic fire lookout above Hidden
-              Lake. From the summit, you can see jagged peaks like Sahale and
-              Eldorado in every direction. It is a tough climb, but the views
-              make every step worth it.
-            </p>
-          </center>
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Hidden Lake Lookout</h1>
+          <p class="post-meta">North Cascades, Washington · July 2025</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            The Hidden Lake Lookout Trail in Washington’s North Cascades is an
+            unforgettable 8-mile round trip with roughly 3,300 feet of elevation
+            gain, topping out near 6,900 feet. The route starts in a cool
+            forest, climbs through wildflower meadows, and opens onto rocky
+            alpine slopes where streams and snowfields linger early in the
+            season. Higher up, the trees give way to granite and wide-open views
+            before you reach the historic fire lookout above Hidden Lake. From
+            the summit, you can see jagged peaks like Sahale and Eldorado in
+            every direction. It is a tough climb, but the views make every step
+            worth it.
+          </p>
 
           <figure>
-            <img src="./images/hidden/road1.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/road1.JPG"
+              alt="A narrow dirt access road cut with ruts and eroded gullies"
+              fetchpriority="high"
+            />
+            <figcaption>
               The rough road to the trailhead is narrow and single-lane, with
               deep washouts that demand careful driving.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/raod2.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/raod2.JPG"
+              alt="An open, wind-scoured stretch of trail high above the valley"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The upper sections of the trail are exposed and windswept.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/start1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/start1.jpeg"
+              alt="North Cascades peaks already visible low on the route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The early views of the North Cascades are already breathtaking.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/start2.jpeg" class="center" />
-            <figcaption align="center">
-              Lush greens blanket the lower slopes.
-            </figcaption>
+            <img
+              src="./images/hidden/start2.jpeg"
+              alt="Dense green vegetation covering the lower hillsides"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Lush greens blanket the lower slopes.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/start3.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/start3.jpeg"
+              alt="Leftover snow sitting in the shade of a ridgeline"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Patches of snow still linger on shaded ridges.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/flower_1.JPG" class="center" />
-            <figcaption align="center">
-              Meadows bursting with wildflowers.
-            </figcaption>
+            <img
+              src="./images/hidden/flower_1.JPG"
+              alt="Wildflowers blooming thickly across an alpine meadow"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Meadows bursting with wildflowers.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/flower_2.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/flower_2.jpeg"
+              alt="High meadow and rock along the upper trail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Alpine scenery that feels almost unreal.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/snow1.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/snow1.JPG"
+              alt="A lingering snowfield lying across the route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Early-season snowfields require careful crossing.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/snow_2.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/snow_2.JPG"
+              alt="Row after row of Cascade summits receding toward the horizon"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The Cascade Range stretches endlessly into the distance.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/filter.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/filter.JPG"
+              alt="Filtering cold meltwater into a bottle partway up the climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Refreshing glacier melt for a mid-hike water refill.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/lake1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/lake1.jpeg"
+              alt="Hidden Lake coming into view in the basin below the trail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               My first glimpse of Hidden Lake’s striking blue water.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/lake2.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/lake2.jpeg"
+              alt="Intensely blue lake water seen from high above"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The deep sapphire color looks almost unreal.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/top1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/top1.jpeg"
+              alt="The lookout building perched on the rocky ridge ahead"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The fire lookout comes into view high on the ridge.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/top2.jpeg" class="center" />
-            <figcaption align="center">The final push to the summit.</figcaption>
+            <img
+              src="./images/hidden/top2.jpeg"
+              alt="The last steep stretch of trail below the high point"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The final push to the summit.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/scramble.JPG" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/scramble.JPG"
+              alt="Boulders and rock steps that must be climbed near the top"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               A short, fun scramble is required to reach the lookout.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/lookout1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/lookout1.jpeg"
+              alt="The small wooden lookout cabin standing on bare rock"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The historic fire lookout is now first-come, first-served for
               overnight stays.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/lookout2.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/hidden/lookout2.jpeg"
+              alt="Standing at the edge of the lookout above the surrounding peaks"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Standing at the lookout’s edge with endless views.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/hidden/lookout3.jpeg" class="center" />
-            <figcaption align="center">
-              Panoramic views from inside the cabin.
-            </figcaption>
+            <img
+              src="./images/hidden/lookout3.jpeg"
+              alt="Mountains framed by the windows of the lookout cabin"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Panoramic views from inside the cabin.</figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

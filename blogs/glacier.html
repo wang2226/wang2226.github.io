@@ -1,237 +1,322 @@
 <!DOCTYPE html>
-<html>
-  <title>Bike Going-to-the-Sun Road</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Bike Going-to-the-Sun Road</title>
+    <meta
+      name="description"
+      content="A 23.22-mile ride with 1,827 feet of climbing on Going-to-the-Sun Road in Glacier National Park, while the upper road was still closed to cars."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bike Going-to-the-Sun Road" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/glacier/view_9.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Bike Going-to-the-Sun Road</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              I biked the iconic Going-to-the-Sun Road in Glacier National Park.
-              Every year, while plow crews are still clearing snow at higher
-              elevations, the park road opens exclusively to bikers and hikers
-              from late June to early July. My ride clocked in at 23.22 miles
-              with 1,827 ft of elevation gain.
-            </p>
-          </center>
+      </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Bike Going-to-the-Sun Road</h1>
+          <p class="post-meta">Glacier National Park, Montana · July 1, 2022</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            I biked the iconic Going-to-the-Sun Road in Glacier National Park.
+            Every year, while plow crews are still clearing snow at higher
+            elevations, the park road opens exclusively to bikers and hikers from
+            late June to early July. My ride clocked in at 23.22 miles with 1,827
+            ft of elevation gain.
+          </p>
 
           <figure>
-            <img src="./images/glacier/strava.jpeg" class="center" />
-            <figcaption align="center">Stats from Strava.</figcaption>
+            <img
+              src="./images/glacier/strava.jpeg"
+              alt="A ride summary screen showing distance and elevation gain"
+              fetchpriority="high"
+            />
+            <figcaption>Stats from Strava.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/cabin.jpeg" class="center" />
-            <figcaption align="center">
-              Cozy cabin at Lake McDonald Lodge.
-            </figcaption>
+            <img
+              src="./images/glacier/cabin.jpeg"
+              alt="A small wooden lodging cabin among trees"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Cozy cabin at Lake McDonald Lodge.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_1.jpeg" class="center" />
-            <figcaption align="center">
-              A beautiful view from the road.
-            </figcaption>
+            <img
+              src="./images/glacier/view_1.jpeg"
+              alt="Mountain scenery seen from the park road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A beautiful view from the road.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_2.jpeg" class="center" />
-            <figcaption align="center">Fresh snowmelt.</figcaption>
+            <img
+              src="./images/glacier/view_2.jpeg"
+              alt="Water running down the rock beside the road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Fresh snowmelt.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_3.jpeg" class="center" />
-            <figcaption align="center">The climb begins.</figcaption>
+            <img
+              src="./images/glacier/view_3.jpeg"
+              alt="The road starting to tilt upward toward higher ground"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The climb begins.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/morning.jpeg" class="center" />
-            <figcaption align="center">
-              Day 2—arriving at the parking lot.
-            </figcaption>
+            <img
+              src="./images/glacier/morning.jpeg"
+              alt="An early morning parking lot at the start of the second day"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Day 2—arriving at the parking lot.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/ready.jpeg" class="center" />
-            <figcaption align="center">
-              Getting ready and eating some breakfast.
-            </figcaption>
+            <img
+              src="./images/glacier/ready.jpeg"
+              alt="Breakfast and gear laid out before setting off"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Getting ready and eating some breakfast.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_4.jpeg" class="center" />
-            <figcaption align="center">My trusty road bike.</figcaption>
+            <img
+              src="./images/glacier/view_4.jpeg"
+              alt="A road bike leaning at the roadside"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>My trusty road bike.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/bear_1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/glacier/bear_1.jpeg"
+              alt="A bear on the hillside above the road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               I spotted a young bear coming down the mountain.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/bear_2.jpeg" class="center" />
-            <figcaption align="center">A closer look at Mr. Bear.</figcaption>
+            <img
+              src="./images/glacier/bear_2.jpeg"
+              alt="A zoomed-in shot of the same bear"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A closer look at Mr. Bear.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/bike_1.jpeg" class="center" />
-            <figcaption align="center">Taking a break.</figcaption>
+            <img
+              src="./images/glacier/bike_1.jpeg"
+              alt="The bike stopped at a pullout during a rest stop"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Taking a break.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_5.jpeg" class="center" />
-            <figcaption align="center">Mt. Reynolds.</figcaption>
+            <img
+              src="./images/glacier/view_5.jpeg"
+              alt="A steep rocky peak rising above the road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mt. Reynolds.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_6.jpeg" class="center" />
-            <figcaption align="center">A closer look at Mt. Reynolds.</figcaption>
+            <img
+              src="./images/glacier/view_6.jpeg"
+              alt="A tighter view of the same rocky summit"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A closer look at Mt. Reynolds.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/bike_2.jpeg" class="center" />
-            <figcaption align="center">Taking a break again.</figcaption>
+            <img
+              src="./images/glacier/bike_2.jpeg"
+              alt="Another roadside stop with the bike parked"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Taking a break again.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_7.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/glacier/view_7.jpeg"
+              alt="Deep snowbanks still lining the road in midsummer"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               An incredible amount of snow, even in July.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/end.jpeg" class="center" />
-            <figcaption align="center">I made it to the end.</figcaption>
+            <img
+              src="./images/glacier/end.jpeg"
+              alt="The far end of the ride, where the closed section stops"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>I made it to the end.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/selfie.jpeg" class="center" />
-            <figcaption align="center">A selfie at the top.</figcaption>
+            <img
+              src="./images/glacier/selfie.jpeg"
+              alt="A self-portrait at the high point of the ride"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A selfie at the top.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/sit.jpeg" class="center" />
-            <figcaption align="center">On top of the world.</figcaption>
+            <img
+              src="./images/glacier/sit.jpeg"
+              alt="Sitting above a wide drop-off with mountains all around"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>On top of the world.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/me.jpeg" class="center" />
-            <figcaption align="center">Mission complete.</figcaption>
+            <img
+              src="./images/glacier/me.jpeg"
+              alt="Me with the bike after finishing the climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mission complete.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_8.jpeg" class="center" />
-            <figcaption align="center">The view from the top.</figcaption>
+            <img
+              src="./images/glacier/view_8.jpeg"
+              alt="Looking out across the valley from the highest point reached"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The view from the top.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/glacier/view_9.jpeg" class="center" />
-            <figcaption align="center">Another incredible view.</figcaption>
+            <img
+              src="./images/glacier/view_9.jpeg"
+              alt="One more wide mountain scene along the road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Another incredible view.</figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

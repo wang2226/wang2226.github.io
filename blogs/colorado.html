@@ -1,164 +1,186 @@
 <!DOCTYPE html>
-<html>
-  <title>Ski Colorado</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Ski Colorado</title>
+    <meta
+      name="description"
+      content="A first ski trip to Colorado, exploring Vail, Breckenridge, and Keystone, where the Bergman lift leads to a 12,000-foot peak."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ski Colorado" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/colorado/breck.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Ski Colorado</h1>
-        </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              My first time skiing in Colorado was unforgettable. I explored
-              Vail, Breckenridge, and Keystone, where I rode the Bergman lift
-              and skied down from a 12,000-foot peak.
-            </p>
-          </center>
-
-          <figure>
-            <img src="./images/colorado/bowl.jpeg" class="center" />
-            <figcaption align="center">
-              The legendary back bowls at Vail.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/vail.jpeg" class="center" />
-            <figcaption align="center">Leftover powder.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/chair.jpeg" class="center" />
-            <figcaption align="center">Tea Cup Bowl.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/breck.jpeg" class="center" />
-            <figcaption align="center">The Front Range.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/selfie.jpeg" class="center" />
-            <figcaption align="center">Keystone.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/bergman.jpeg" class="center" />
-            <figcaption align="center">
-              First chair to Bergman Bowl.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/skitip.jpeg" class="center" />
-            <figcaption align="center">
-              I stayed at the historic Ski Tip Lodge.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/colorado/powder.jpeg" class="center" />
-            <figcaption align="center">Untouched powder!</figcaption>
-          </figure>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Ski Colorado</h1>
+          <p class="post-meta">Breckenridge, Colorado · January 2024</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            My first time skiing in Colorado was unforgettable. I explored Vail,
+            Breckenridge, and Keystone, where I rode the Bergman lift and skied
+            down from a 12,000-foot peak.
+          </p>
+
+          <figure>
+            <img
+              src="./images/colorado/bowl.jpeg"
+              alt="Wide open snow in the back bowls of Vail"
+              fetchpriority="high"
+            />
+            <figcaption>The legendary back bowls at Vail.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/vail.jpeg"
+              alt="Patches of untracked snow left between ski tracks at Vail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Leftover powder.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/chair.jpeg"
+              alt="A chairlift rising above Tea Cup Bowl"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Tea Cup Bowl.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/breck.jpeg"
+              alt="A line of snowy peaks along the Front Range"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The Front Range.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/selfie.jpeg"
+              alt="Selfie on the slopes at Keystone"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Keystone.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/bergman.jpeg"
+              alt="Riding the Bergman lift on the first trip up of the day"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>First chair to Bergman Bowl.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/skitip.jpeg"
+              alt="The historic lodge building where I stayed"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>I stayed at the historic Ski Tip Lodge.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/colorado/powder.jpeg"
+              alt="A smooth field of fresh snow without a single track"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Untouched powder!</figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

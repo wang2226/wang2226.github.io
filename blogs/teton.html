@@ -1,147 +1,162 @@
 <!DOCTYPE html>
-<html>
-  <title>Grand Teton</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Biking Grand Teton National Park</title>
+    <meta
+      name="description"
+      content="Riding the paved bike trail in Grand Teton National Park, which runs from Jenny Lake to Jackson, Wyoming, separated from the park road."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Biking Grand Teton National Park" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/teton/cover.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Biking Grand Teton National Park</h1>
-        </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              Grand Teton National Park has an incredible bike trail that starts
-              at Jenny Lake and runs all the way to Jackson, Wyoming. The trail
-              is paved and completely separated from the park road, making it a
-              perfect way to explore the park. Heck, you could even bring your
-              backpacking gear and turn it into a bikepacking trip. If you visit
-              during the peak summer season as I did, though, be prepared for
-              massive crowds on the trail.
-            </p>
-          </center>
-
-          <figure>
-            <img src="./images/teton/arrive.jpeg" class="center" />
-            <figcaption align="center">Arriving at the trailhead.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/teton/jenny.jpeg" class="center" />
-            <figcaption align="center">Jenny Lake.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/teton/trail.jpeg" class="center" />
-            <figcaption align="center">The bike trail.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/teton/mt.jpeg" class="center" />
-            <figcaption align="center">The Tetons and Mount Moran.</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./images/teton/view.jpeg" class="center" />
-            <figcaption align="center">An incredible view along the trail.</figcaption>
-          </figure>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Biking Grand Teton National Park</h1>
+          <p class="post-meta">
+            Grand Teton National Park, Wyoming · August 14, 2021
+          </p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            Grand Teton National Park has an incredible bike trail that starts at
+            Jenny Lake and runs all the way to Jackson, Wyoming. The trail is
+            paved and completely separated from the park road, making it a perfect
+            way to explore the park. Heck, you could even bring your backpacking
+            gear and turn it into a bikepacking trip. If you visit during the peak
+            summer season as I did, though, be prepared for massive crowds on the
+            trail.
+          </p>
+
+          <figure>
+            <img
+              src="./images/teton/arrive.jpeg"
+              alt="The start of the bike trail at the trailhead"
+              fetchpriority="high"
+            />
+            <figcaption>Arriving at the trailhead.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/teton/jenny.jpeg"
+              alt="A clear mountain lake where the trail begins"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Jenny Lake.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/teton/trail.jpeg"
+              alt="The paved path running well away from the park road"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The bike trail.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/teton/mt.jpeg"
+              alt="A wall of jagged peaks rising across the valley"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The Tetons and Mount Moran.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="./images/teton/view.jpeg"
+              alt="Open sagebrush flats and mountains seen from the bike path"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>An incredible view along the trail.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

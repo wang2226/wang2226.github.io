@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <title>Bruce's Adventure Blogs</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Raleway"
-  />
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Raleway", sans-serif;
-    }
-  </style>
-  <body class="w3-light-grey">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bruce's Adventure Blogs</title>
+    <meta
+      name="description"
+      content="Trip reports from the mountains: hiking, skiing, mountaineering, and biking across the Cascades, Rockies, and beyond."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bruce's Adventure Blogs" />
+    <meta
+      property="og:description"
+      content="Trip reports from the mountains: hiking, skiing, mountaineering, and biking."
+    />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/sahale/me2.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -33,636 +42,510 @@
 
       gtag("config", "G-LCVSV9GF0S");
     </script>
+  </head>
 
-    <!-- <script>
-         var password = "simba";
-         (function passcodeprotect() {
-            var passcode = prompt("Nick -> Prince -> ?");
-            while (passcode !== password) {
-               alert("Incorrect PassCode");
-               return passcodeprotect();
-            }
-         }());
-         alert("Welcome to my world!");
-    </script> -->
-
-    <!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-    <div class="w3-content" style="max-width: 1400px">
-      <!-- Header -->
-      <header class="w3-container w3-center w3-padding-32">
-        <h1><b>Bruce's Adventure Blogs</b></h1>
-        <p>⛰️ ⛷️ 🚴🏼 🥾 🌲</p>
-      </header>
-
-      <!-- Grid -->
-      <div class="w3-row">
-        <!-- Blog entries -->
-        <div class="w3-col l8 s12">
-          <!-- Blog entry -->
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/sahale/me2.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Cascade Pass to Sahale Camp</b></h3>
-              <h5>
-                North Cascades, Washington,
-                <span class="w3-opacity">August, 2025</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                This 12-mile round trip climbs 4,000 feet from Cascade Pass to
-                Sahale Glacier Camp. The route winds through wildflower meadows
-                and over rocky ridges, with amazing views of jagged peaks and
-                turquoise alpine lakes along the way.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./sahale.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/parkbutte/6.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Park Butte Lookout</b></h3>
-              <h5>
-                Mount Baker, Washington,
-                <span class="w3-opacity">August, 2025</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                This 7.5-mile hike gains about 2,200 feet through forest,
-                meadows, and rocky slopes before reaching a historic fire
-                lookout. At the top, the close-up views of Mount Baker make the
-                climb completely worth it.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./parkbutte.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/hidden/lake1.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Hidden Lake</b></h3>
-              <h5>
-                North Cascades, Washington,
-                <span class="w3-opacity">July, 2025</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                This 8-mile hike into the North Cascades climbs through
-                wildflower meadows and over alpine granite to a historic fire
-                lookout. From the top, there are incredible 360-degree views of
-                jagged peaks and the deep-blue Hidden Lake below.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./hiddenlake.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/muir/camp_muir.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Hike to Camp Muir</b></h3>
-              <h5>
-                Mt. Rainier, Washington,
-                <span class="w3-opacity">July, 2025</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I hiked to Camp Muir, a base camp at 10,188 feet on Mount
-                Rainier. The route gains more than 4,700 feet and passes
-                glaciers, deep crevasses, and wide-open views above the clouds.
-                It was a tough climb and one of my most memorable days in the
-                Cascades.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./muir.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/sunrise/mnt.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Bike Sunrise Road</b></h3>
-              <h5>
-                Mt. Rainier, Washington,
-                <span class="w3-opacity">June, 2025</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I biked Sunrise Road in Mount Rainier National Park before it
-                opened to cars for the season. With snowplow crews still
-                clearing the upper road, cyclists and hikers had the alpine
-                scenery almost entirely to themselves.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./sunrise.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/colorado/breck.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Ski Colorado</b></h3>
-              <h5>
-                Breckenridge, Colorado,
-                <span class="w3-opacity">January, 2024</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I spent a week skiing Vail, Breckenridge, and Keystone, chasing
-                powder and exploring some of Colorado's best-known terrain.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./colorado.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/maroon_bells/pic1.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Maroon Bells</b></h3>
-              <h5>
-                Aspen, Colorado,
-                <span class="w3-opacity">August, 2023</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I visited the Maroon Bells and spent some time exploring Aspen,
-                surrounded by some of Colorado's most iconic mountain scenery.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./maroon.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/christmas/bird.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Christmas 2022 Ski Trip</b></h3>
-              <h5>
-                Salt Lake City, Utah,
-                <span class="w3-opacity">December, 2022</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                After moving back to Chicagoland, I headed to Salt Lake City for
-                a Christmas ski trip filled with storms, deep snow, and a few
-                unexpected adventures.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./christmas.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/glacier/view_9.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Bike Going-to-the-Sun Road</b></h3>
-              <h5>
-                Glacier National Park, Montana,
-                <span class="w3-opacity">July 1, 2022</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I biked Going-to-the-Sun Road in Glacier National Park while the
-                upper section was still closed to cars. With snowplow crews
-                working higher up, cyclists and hikers had a rare chance to
-                enjoy this iconic road without traffic.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./glacier.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/utah/cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Ski Utah</b></h3>
-              <h5>Utah, <span class="w3-opacity">March, 2022</span></h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I skied Snowbird, Alta, Deer Valley, Park City, and Powder
-                Mountain, checking several destinations off my list from
-                National Geographic's "100 Slopes of a Lifetime." I also tried
-                snowcat skiing for the first time on Lightning Ridge.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./utah.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/ski22/cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Ski Montana</b></h3>
-              <h5>
-                Bridger and Big Sky, Montana,
-                <span class="w3-opacity">2022 Ski Season</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                My season as a ski bum in Bozeman included 69 ski days, more
-                than 700 miles, and 629,000 vertical feet. I also skied my first
-                double-black run at Bridger Bowl, a mountain that will always
-                have a special place in my heart.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./montana.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/teton/cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Bike Tour in Grand Teton National Park</b></h3>
-              <h5>
-                Grand Teton National Park, Wyoming,
-                <span class="w3-opacity">August 14th, 2021</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I biked 25 miles on the paved trail through Grand Teton National
-                Park. The scenic route stretches all the way to Jackson and is a
-                great way to take in the Tetons at a slower pace.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./teton.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/wheeler/cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Summit the Second Highest Peak in Nevada</b></h3>
-              <h5>
-                Great Basin National Park, Nevada,
-                <span class="w3-opacity">July 3rd, 2021</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I reached the 13,065-foot summit of Wheeler Peak, the
-                second-highest peak in Nevada and the highest mountain I had
-                climbed at the time. The 8.6-mile trip took 5 hours and 56
-                minutes, with about 3,000 feet of elevation gain and some wild
-                off-trail scrambling near the top.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./wheeler.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/hood/cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Hiking and Summer Skiing on Mount Hood</b></h3>
-              <h5>
-                Mount Hood, Oregon,
-                <span class="w3-opacity">June 22, 2021</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                I hiked toward Illumination Rock, camped overnight, and returned
-                to Timberline Lodge for a day of summer skiing. Only two runs
-                were open, and the snow got slushy by the afternoon, but skiing
-                in June on Oregon's tallest mountain was an experience I will
-                never forget.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./hood.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-card-4 w3-margin w3-white">
-            <img
-              src="./images/SouthSister/ss_cover.jpeg"
-              alt="Nature"
-              style="width: 100%"
-            />
-            <div class="w3-container">
-              <h3><b>Hike to the False Summit of South Sister</b></h3>
-              <h5>
-                South Sister, Oregon,
-                <span class="w3-opacity">June 12, 2021</span>
-              </h5>
-            </div>
-
-            <div class="w3-container">
-              <p>
-                My first mountaineering-style adventure covered 9.8 miles and
-                3,453 feet of climbing through deep snow. I ran out of time
-                before the true summit, but glissading back down with the
-                Cascades spread out in front of me was easily the highlight of
-                the day.
-              </p>
-              <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p>
-                    <button
-                      class="w3-button w3-padding-large w3-white w3-border"
-                      onclick="window.location.href='./southsister.html'"
-                    >
-                      <b>READ MORE »</b>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <!-- END BLOG ENTRIES -->
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html" aria-current="page">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-
-        <!-- Introduction menu -->
-        <div class="w3-col l4">
-          <!-- About Card -->
-          <div class="w3-card w3-margin w3-margin-top">
-            <img src="./images/me.jpeg" style="width: 100%" />
-            <div class="w3-container w3-white">
-              <h4><b>Uphill Pursuit</b></h4>
-              <p>
-                I discovered my love for outdoor adventures after moving to
-                Eugene, Oregon. I enjoy all kinds of mountain-related
-                activities, including skiing, mountaineering, hiking, and
-                camping. There's nothing quite like the thrill of summiting a
-                snow-capped peak or skiing down its pristine slopes. Many of my
-                adventure ideas are inspired by my favorite sources of
-                inspiration.
-                <a
-                  href="https://www.youtube.com/channel/UC-04mJDJUYHEyE8JPIEa0-w"
-                  >YouTube Channel</a
-                >
-                As the REI slogan says, "A life outdoors is a life well lived,"
-                my goal is to explore as many beautiful places as possible.
-              </p>
-            </div>
-          </div>
-          <hr />
-
-          <!-- Posts -->
-          <div class="w3-card w3-margin">
-            <div class="w3-container w3-padding">
-              <h4>Bucket List</h4>
-            </div>
-            <ul class="w3-ul w3-hoverable w3-white">
-              <li class="w3-padding-16">
-                <span class="w3-large">Ski Watchman Peak at Crater Lake</span
-                ><br />
-              </li>
-              <li class="w3-padding-16">
-                <span class="w3-large">Summit Mt St. Helens</span><br />
-              </li>
-              <li class="w3-padding-16">
-                <span class="w3-large">Summit Mt Shasta</span><br />
-              </li>
-              <li class="w3-padding-16">
-                <span class="w3-large">Summit Mt Rainier</span><br />
-              </li>
-              <li class="w3-padding-16">
-                <span class="w3-large"
-                  >Rim to Rim to Rim traverse at Grand Canyon</span
-                ><br />
-              </li>
-            </ul>
-          </div>
-          <hr />
-
-          <!-- END Introduction Menu -->
-        </div>
-
-        <!-- END GRID -->
       </div>
-      <br />
+    </header>
 
-      <!-- END w3-content -->
-    </div>
+    <main>
+      <div class="wrap">
+        <section class="hero">
+          <h1>Bruce's Adventure Blogs</h1>
+          <p class="hero__tagline" aria-hidden="true">⛰️ ⛷️ 🚴🏼 🥾 🌲</p>
+          <p class="hero__intro">
+            Trip reports from the mountains — hiking, skiing, mountaineering,
+            and biking through the Cascades, Rockies, and everywhere in between.
+          </p>
+        </section>
+
+        <div class="home-layout">
+          <div class="card-grid">
+            <article class="card">
+              <a class="card__media" href="./sahale.html" tabindex="-1">
+                <img
+                  src="./images/sahale/me2.jpeg"
+                  alt="Standing above the clouds at Sahale Glacier Camp in the North Cascades"
+                  fetchpriority="high"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Hike</span>
+                <h2 class="card__title">
+                  <a href="./sahale.html">Cascade Pass to Sahale Camp</a>
+                </h2>
+                <p class="card__meta">
+                  North Cascades, Washington · August 2025
+                </p>
+                <p class="card__excerpt">
+                  This 12-mile round trip climbs 4,000 feet from Cascade Pass to
+                  Sahale Glacier Camp. The route winds through wildflower
+                  meadows and over rocky ridges, with amazing views of jagged
+                  peaks and turquoise alpine lakes along the way.
+                </p>
+                <a class="card__link" href="./sahale.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./parkbutte.html" tabindex="-1">
+                <img
+                  src="./images/parkbutte/6.jpeg"
+                  alt="Mount Baker seen from the Park Butte trail"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Hike</span>
+                <h2 class="card__title">
+                  <a href="./parkbutte.html">Park Butte Lookout</a>
+                </h2>
+                <p class="card__meta">Mount Baker, Washington · August 2025</p>
+                <p class="card__excerpt">
+                  This 7.5-mile hike gains about 2,200 feet through forest,
+                  meadows, and rocky slopes before reaching a historic fire
+                  lookout. At the top, the close-up views of Mount Baker make
+                  the climb completely worth it.
+                </p>
+                <a class="card__link" href="./parkbutte.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./hiddenlake.html" tabindex="-1">
+                <img
+                  src="./images/hidden/lake1.jpeg"
+                  alt="The deep blue water of Hidden Lake below the lookout"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Hike</span>
+                <h2 class="card__title">
+                  <a href="./hiddenlake.html">Hidden Lake Lookout</a>
+                </h2>
+                <p class="card__meta">
+                  North Cascades, Washington · July 2025
+                </p>
+                <p class="card__excerpt">
+                  This 8-mile hike into the North Cascades climbs through
+                  wildflower meadows and over alpine granite to a historic fire
+                  lookout. From the top, there are incredible 360-degree views
+                  of jagged peaks and the deep-blue Hidden Lake below.
+                </p>
+                <a class="card__link" href="./hiddenlake.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./muir.html" tabindex="-1">
+                <img
+                  src="./images/muir/camp_muir.jpeg"
+                  alt="Camp Muir at 10,188 feet on Mount Rainier"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Hike</span>
+                <h2 class="card__title">
+                  <a href="./muir.html">Hike to Camp Muir</a>
+                </h2>
+                <p class="card__meta">Mount Rainier, Washington · July 2025</p>
+                <p class="card__excerpt">
+                  I hiked to Camp Muir, a base camp at 10,188 feet on Mount
+                  Rainier. The route gains more than 4,700 feet and passes
+                  glaciers, deep crevasses, and wide-open views above the
+                  clouds. It was a tough climb and one of my most memorable days
+                  in the Cascades.
+                </p>
+                <a class="card__link" href="./muir.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./sunrise.html" tabindex="-1">
+                <img
+                  src="./images/sunrise/mnt.jpeg"
+                  alt="Mount Rainier rising above Sunrise Road"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Bike</span>
+                <h2 class="card__title">
+                  <a href="./sunrise.html">Biking Sunrise Road</a>
+                </h2>
+                <p class="card__meta">Mount Rainier, Washington · June 2025</p>
+                <p class="card__excerpt">
+                  I biked Sunrise Road in Mount Rainier National Park before it
+                  opened to cars for the season. With snowplow crews still
+                  clearing the upper road, cyclists and hikers had the alpine
+                  scenery almost entirely to themselves.
+                </p>
+                <a class="card__link" href="./sunrise.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./colorado.html" tabindex="-1">
+                <img
+                  src="./images/colorado/breck.jpeg"
+                  alt="Looking out over the Front Range from Breckenridge"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Ski</span>
+                <h2 class="card__title">
+                  <a href="./colorado.html">Ski Colorado</a>
+                </h2>
+                <p class="card__meta">Breckenridge, Colorado · January 2024</p>
+                <p class="card__excerpt">
+                  I spent a week skiing Vail, Breckenridge, and Keystone,
+                  chasing powder and exploring some of Colorado's best-known
+                  terrain.
+                </p>
+                <a class="card__link" href="./colorado.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./maroon.html" tabindex="-1">
+                <img
+                  src="./images/maroon_bells/pic1.jpeg"
+                  alt="The Maroon Bells reflected in Maroon Lake near Aspen"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Scenic</span>
+                <h2 class="card__title">
+                  <a href="./maroon.html">Maroon Bells</a>
+                </h2>
+                <p class="card__meta">Aspen, Colorado · August 2023</p>
+                <p class="card__excerpt">
+                  I visited the Maroon Bells and spent some time exploring
+                  Aspen, surrounded by some of Colorado's most iconic mountain
+                  scenery.
+                </p>
+                <a class="card__link" href="./maroon.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./christmas.html" tabindex="-1">
+                <img
+                  src="./images/christmas/bird.jpeg"
+                  alt="The view from the summit of Snowbird in Utah"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Ski</span>
+                <h2 class="card__title">
+                  <a href="./christmas.html">Christmas 2022 Ski Trip</a>
+                </h2>
+                <p class="card__meta">Salt Lake City, Utah · December 2022</p>
+                <p class="card__excerpt">
+                  After moving back to Chicagoland, I headed to Salt Lake City
+                  for a Christmas ski trip filled with storms, deep snow, and a
+                  few unexpected adventures.
+                </p>
+                <a class="card__link" href="./christmas.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./glacier.html" tabindex="-1">
+                <img
+                  src="./images/glacier/view_9.jpeg"
+                  alt="Going-to-the-Sun Road winding through Glacier National Park"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Bike</span>
+                <h2 class="card__title">
+                  <a href="./glacier.html">Bike Going-to-the-Sun Road</a>
+                </h2>
+                <p class="card__meta">
+                  Glacier National Park, Montana · July 1, 2022
+                </p>
+                <p class="card__excerpt">
+                  I biked Going-to-the-Sun Road in Glacier National Park while
+                  the upper section was still closed to cars. With snowplow
+                  crews working higher up, cyclists and hikers had a rare chance
+                  to enjoy this iconic road without traffic.
+                </p>
+                <a class="card__link" href="./glacier.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./utah.html" tabindex="-1">
+                <img
+                  src="./images/utah/cover.jpeg"
+                  alt="Deep powder and blue sky at a Utah ski resort"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Ski</span>
+                <h2 class="card__title"><a href="./utah.html">Ski Utah</a></h2>
+                <p class="card__meta">Utah · March 2022</p>
+                <p class="card__excerpt">
+                  I skied Snowbird, Alta, Deer Valley, Park City, and Powder
+                  Mountain, checking several destinations off my list from
+                  National Geographic's "100 Slopes of a Lifetime." I also tried
+                  snowcat skiing for the first time on Lightning Ridge.
+                </p>
+                <a class="card__link" href="./utah.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./montana.html" tabindex="-1">
+                <img
+                  src="./images/ski22/cover.jpeg"
+                  alt="A powder day at Bridger Bowl in Montana"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Ski</span>
+                <h2 class="card__title">
+                  <a href="./montana.html">Ski Montana</a>
+                </h2>
+                <p class="card__meta">
+                  Bridger and Big Sky, Montana · 2022 ski season
+                </p>
+                <p class="card__excerpt">
+                  My season as a ski bum in Bozeman included 69 ski days, more
+                  than 700 miles, and 629,000 vertical feet. I also skied my
+                  first double-black run at Bridger Bowl, a mountain that will
+                  always have a special place in my heart.
+                </p>
+                <a class="card__link" href="./montana.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./teton.html" tabindex="-1">
+                <img
+                  src="./images/teton/cover.jpeg"
+                  alt="The Teton range from the paved bike trail"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Bike</span>
+                <h2 class="card__title">
+                  <a href="./teton.html">Biking Grand Teton National Park</a>
+                </h2>
+                <p class="card__meta">
+                  Grand Teton National Park, Wyoming · August 14, 2021
+                </p>
+                <p class="card__excerpt">
+                  I biked 25 miles on the paved trail through Grand Teton
+                  National Park. The scenic route stretches all the way to
+                  Jackson and is a great way to take in the Tetons at a slower
+                  pace.
+                </p>
+                <a class="card__link" href="./teton.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./wheeler.html" tabindex="-1">
+                <img
+                  src="./images/wheeler/cover.jpeg"
+                  alt="Wheeler Peak rising above Great Basin National Park"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Summit</span>
+                <h2 class="card__title">
+                  <a href="./wheeler.html">Summiting Wheeler Peak in Nevada</a>
+                </h2>
+                <p class="card__meta">
+                  Great Basin National Park, Nevada · July 3, 2021
+                </p>
+                <p class="card__excerpt">
+                  I reached the 13,065-foot summit of Wheeler Peak, the
+                  second-highest peak in Nevada and the highest mountain I had
+                  climbed at the time. The 8.6-mile trip took 5 hours and 56
+                  minutes, with about 3,000 feet of elevation gain and some wild
+                  off-trail scrambling near the top.
+                </p>
+                <a class="card__link" href="./wheeler.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./hood.html" tabindex="-1">
+                <img
+                  src="./images/hood/cover.jpeg"
+                  alt="Mount Hood under deep summer snow"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Hike &amp; Ski</span>
+                <h2 class="card__title">
+                  <a href="./hood.html"
+                    >Hiking and Summer Skiing on Mount Hood</a
+                  >
+                </h2>
+                <p class="card__meta">Mount Hood, Oregon · June 22, 2021</p>
+                <p class="card__excerpt">
+                  I hiked toward Illumination Rock, camped overnight, and
+                  returned to Timberline Lodge for a day of summer skiing. Only
+                  two runs were open, and the snow got slushy by the afternoon,
+                  but skiing in June on Oregon's tallest mountain was an
+                  experience I will never forget.
+                </p>
+                <a class="card__link" href="./hood.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <a class="card__media" href="./southsister.html" tabindex="-1">
+                <img
+                  src="./images/SouthSister/ss_cover.jpeg"
+                  alt="The snow-covered slopes of South Sister in Oregon"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="card__body">
+                <span class="card__tag">Summit</span>
+                <h2 class="card__title">
+                  <a href="./southsister.html"
+                    >The False Summit of South Sister</a
+                  >
+                </h2>
+                <p class="card__meta">South Sister, Oregon · June 12, 2021</p>
+                <p class="card__excerpt">
+                  My first mountaineering-style adventure covered 9.8 miles and
+                  3,453 feet of climbing through deep snow. I ran out of time
+                  before the true summit, but glissading back down with the
+                  Cascades spread out in front of me was easily the highlight of
+                  the day.
+                </p>
+                <a class="card__link" href="./southsister.html">Read more</a>
+              </div>
+            </article>
+          </div>
+
+          <aside class="sidebar">
+            <section class="panel">
+              <div class="panel__media">
+                <img
+                  src="./images/me.jpeg"
+                  alt="Bruce on a snowy ridge"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="panel__body">
+                <h2 class="panel__title">Uphill Pursuit</h2>
+                <p>
+                  I discovered my love for the outdoors after moving to Eugene,
+                  Oregon. Since then I have chased just about every
+                  mountain-related activity I can find: skiing, mountaineering,
+                  hiking, and camping. Nothing beats standing on a snow-capped
+                  summit or skiing down its slopes.
+                </p>
+                <p>
+                  A lot of my trip ideas come from this
+                  <a
+                    href="https://www.youtube.com/channel/UC-04mJDJUYHEyE8JPIEa0-w"
+                    target="_blank"
+                    rel="noopener"
+                    >YouTube channel</a
+                  >. As the REI slogan goes, "A life outdoors is a life well
+                  lived," so my goal is to explore as many beautiful places as I
+                  can.
+                </p>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel__body">
+                <h2 class="panel__title">Bucket List</h2>
+              </div>
+              <ul class="checklist">
+                <li>Ski Watchman Peak at Crater Lake</li>
+                <li>Summit Mount St. Helens</li>
+                <li>Summit Mount Shasta</li>
+                <li>Summit Mount Rainier</li>
+                <li>Rim to Rim to Rim traverse at the Grand Canyon</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="../index.html">Home</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a
+            href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+            target="_blank"
+            rel="noopener"
+            >YouTube</a
+          >
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

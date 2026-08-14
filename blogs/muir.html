@@ -1,229 +1,279 @@
 <!DOCTYPE html>
-<html>
-  <title>Hike to Camp Muir</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Hike to Camp Muir</title>
+    <meta
+      name="description"
+      content="Hiking to Camp Muir, the rugged base camp at 10,188 feet on Mount Rainier, climbing through snowfields and shifting clouds."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hike to Camp Muir" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/muir/camp_muir.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Hike to Camp Muir</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              Mount Rainier has always stood out on the Washington skyline and
-              called to anyone looking for an alpine adventure. At 14,410 feet,
-              it is both intimidating and inspiring. One of its best-known hikes
-              leads to Camp Muir, a rugged base camp at 10,188 feet. The route
-              feels like much more than a normal hike as it climbs through
-              snowfields, shifting clouds, and some incredible mountain scenery.
-            </p>
-          </center>
+      </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Hike to Camp Muir</h1>
+          <p class="post-meta">Mount Rainier, Washington · July 2025</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            Mount Rainier has always stood out on the Washington skyline and
+            called to anyone looking for an alpine adventure. At 14,410 feet, it
+            is both intimidating and inspiring. One of its best-known hikes
+            leads to Camp Muir, a rugged base camp at 10,188 feet. The route
+            feels like much more than a normal hike as it climbs through
+            snowfields, shifting clouds, and some incredible mountain scenery.
+          </p>
 
           <figure>
-            <img src="./images/muir/start.jpeg" class="center" />
-            <figcaption align="center">
-              Mount Rainier seen from Paradise.
-            </figcaption>
+            <img
+              src="./images/muir/start.jpeg"
+              alt="The glaciated mass of Mount Rainier rising above the Paradise area"
+              fetchpriority="high"
+            />
+            <figcaption>Mount Rainier seen from Paradise.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/skyline_1.jpeg" class="center" />
-            <figcaption align="center">
-              Reaching the upper Skyline Trail.
-            </figcaption>
+            <img
+              src="./images/muir/skyline_1.jpeg"
+              alt="The Skyline Trail climbing toward higher ground"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Reaching the upper Skyline Trail.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/skyline_2.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/muir/skyline_2.jpeg"
+              alt="Low cloud settling over high meadows on the mountain"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Alpine meadows under a blanket of cloud.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/marmot.jpeg" class="center" />
-            <figcaption align="center">
-              A curious marmot along the trail.
-            </figcaption>
+            <img
+              src="./images/muir/marmot.jpeg"
+              alt="A marmot watching from just off the path"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A curious marmot along the trail.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/snowfield.jpeg" class="center" />
-            <figcaption align="center">
-              Approaching the Muir Snowfield.
-            </figcaption>
+            <img
+              src="./images/muir/snowfield.jpeg"
+              alt="The wide snow slope of the Muir Snowfield ahead on the route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Approaching the Muir Snowfield.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/adam.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/muir/adam.jpeg"
+              alt="Mount Adams standing far off above the cloud layer"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Mount Adams is visible in the distance.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/cloud.jpeg" class="center" />
-            <figcaption align="center">Above a sea of clouds.</figcaption>
+            <img
+              src="./images/muir/cloud.jpeg"
+              alt="A flat blanket of cloud spread out below the climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Above a sea of clouds.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/line.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/muir/line.jpeg"
+              alt="Climbers strung out single file across the snow"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               A line of climbers heading toward camp.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/glacier.jpeg" class="center" />
-            <figcaption align="center">
-              A view of the Nisqually Glacier.
-            </figcaption>
+            <img
+              src="./images/muir/glacier.jpeg"
+              alt="Broken, crevassed ice of the Nisqually Glacier"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A view of the Nisqually Glacier.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/distance.jpeg" class="center" />
-            <figcaption align="center">Camp Muir in the distance.</figcaption>
+            <img
+              src="./images/muir/distance.jpeg"
+              alt="The buildings of Camp Muir still far off across the snowfield"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Camp Muir in the distance.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/camp_muir.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/muir/camp_muir.jpeg"
+              alt="Arriving at Camp Muir after the long climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Made it to Camp Muir—elevation 10,188 feet.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/camp.jpeg" class="center" />
-            <figcaption align="center">
-              High camp for summit-bound climbers.
-            </figcaption>
+            <img
+              src="./images/muir/camp.jpeg"
+              alt="Shelters and tents where climbers stay before going higher"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>High camp for summit-bound climbers.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/crevasse.jpeg" class="center" />
-            <figcaption align="center">
-              A crevasse along the summit route.
-            </figcaption>
+            <img
+              src="./images/muir/crevasse.jpeg"
+              alt="A deep split in the glacier on the way to the top"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A crevasse along the summit route.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/food.jpeg" class="center" />
-            <figcaption align="center">
-              A much-needed meal after the climb.
-            </figcaption>
+            <img
+              src="./images/muir/food.jpeg"
+              alt="Food eaten once the day's climbing was finished"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A much-needed meal after the climb.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/me.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/muir/me.jpeg"
+              alt="Pausing on the mountain at the end of a demanding day"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               A strenuous hike, but the views made it all worthwhile.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/muir/whiteout.jpeg" class="center" />
-            <figcaption align="center">
-              Descending in whiteout conditions.
-            </figcaption>
+            <img
+              src="./images/muir/whiteout.jpeg"
+              alt="Heading downhill with visibility reduced to almost nothing"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Descending in whiteout conditions.</figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

@@ -1,148 +1,161 @@
 <!DOCTYPE html>
-<html>
-  <title>Maroon Bells</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>Maroon Bells</title>
+    <meta
+      name="description"
+      content="Exploring the Maroon Bells above Maroon Creek Valley near Aspen, Colorado, along with the Crater Lake Trail and the John Denver Sanctuary."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Maroon Bells" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/maroon_bells/pic1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">Maroon Bells</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              I explored Aspen's Maroon Bells, the most photographed mountains
-              in North America. These iconic, bell-shaped peaks rise to 14,000
-              feet over the glacial Maroon Creek Valley, their striking
-              wine-colored slopes creating some seriously breathtaking views.
-            </p>
-          </center>
+      </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>Maroon Bells</h1>
+          <p class="post-meta">Aspen, Colorado · August 2023</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            I explored Aspen's Maroon Bells, the most photographed mountains in
+            North America. These iconic, bell-shaped peaks rise to 14,000 feet
+            over the glacial Maroon Creek Valley, their striking wine-colored
+            slopes creating some seriously breathtaking views.
+          </p>
 
           <figure>
-            <img src="./images/maroon_bells/pic1.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/maroon_bells/pic1.jpeg"
+              alt="The bell-shaped Maroon Bells rising above the valley"
+              fetchpriority="high"
+            />
+            <figcaption>
               The Maroon Bells, the most photographed spot in Colorado.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/maroon_bells/pic2.jpeg" class="center" />
-            <figcaption align="center">The surrounding peaks.</figcaption>
+            <img
+              src="./images/maroon_bells/pic2.jpeg"
+              alt="Ridgelines around the Maroon Creek Valley"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The surrounding peaks.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/maroon_bells/pic3.jpeg" class="center" />
-            <figcaption align="center">Crater Lake Trail.</figcaption>
+            <img
+              src="./images/maroon_bells/pic3.jpeg"
+              alt="The trail leading toward Crater Lake"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Crater Lake Trail.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/maroon_bells/pic4.jpeg" class="center" />
-            <figcaption align="center">John Denver Sanctuary.</figcaption>
+            <img
+              src="./images/maroon_bells/pic4.jpeg"
+              alt="The memorial garden at the John Denver Sanctuary"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>John Denver Sanctuary.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/maroon_bells/pic5.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/maroon_bells/pic5.jpeg"
+              alt="Song lyrics engraved into a large boulder"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The lyrics to “Rocky Mountain High” carved in stone.
             </figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

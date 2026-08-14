@@ -1,325 +1,384 @@
 <!DOCTYPE html>
-<html>
-  <title>South Sister</title>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <title>The False Summit of South Sister</title>
+    <meta
+      name="description"
+      content="Scouting the snow-covered South Sister Summit Trail in June, climbing Lewis Glacier with an ice axe, and turning around at the false summit."
+    />
+    <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The False Summit of South Sister" />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/SouthSister/ss_cover.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      nav {
-        font-size: 20px;
-        background-color: grey;
-        color: #cccccc;
-        height: 75px;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/theme.js"></script>
 
-      ul {
-        position: fixed;
-        right: 10px;
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ul li {
-        display: inline;
-        padding-right: 30px;
-        font-weight: 500;
-        color: rgb(251, 255, 0);
-      }
-
-      .blog {
-        margin-top: 20px;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 400px;
-        font-size: 18px;
-      }
-
-      .post {
-        margin-top: 20px;
-        float: left;
-      }
-
-      .blogHeader {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .links {
-        float: right;
-      }
-
-      .links li {
-        color: black;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      footer {
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        height: 100px;
-        padding: 20px;
-        background-color: grey;
-        text-align: center;
-      }
-    </style>
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-LCVSV9GF0S");
-  </script>
-
   <body>
-    <div class="blog">
-      <div class="post">
-        <div class="center">
-          <h1 style="text-align: center">The False Summit of South Sister</h1>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./blogs.html">Uphill Pursuit</a>
+        <div class="site-header__actions">
+          <nav class="site-nav" aria-label="Main">
+            <a href="./blogs.html">Adventures</a>
+            <a href="../photography/portfolio.html">Photography</a>
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            >
+            <a href="../index.html">Home</a>
+          </nav>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2.6v2.2M12 19.2v2.2M4.6 12H2.4M21.6 12h-2.2M6.8 6.8 5.2 5.2M18.8 18.8l-1.6-1.6M17.2 6.8l1.6-1.6M5.2 18.8l1.6-1.6"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="blog-body">
-          <center>
-            <p style="width: 900px; text-align: left">
-              South Sister had been on my bucket list for a while. Thousands of
-              people make it to the summit each summer. The route is not
-              technical, has no known open crevasses, and has a pretty "mellow"
-              slope. Still, that does not make it an easy hike: you gain over
-              4,000 ft in just 6 miles, with the real climbing packed into the
-              final 3 miles. Knowing it would be a challenge, I trained on one
-              of the more difficult trails up Spencer Butte, a local mountain in
-              Eugene. My training route gains about 1,000 ft in 0.71 miles,
-              roughly matching the steepest part of the South Sister Summit
-              Trail. After training for about two months, I decided to scout the
-              trail on June 12. My plan was to practice some route-finding and
-              reach the plateau.
-            </p>
-          </center>
+      </div>
+    </header>
+
+    <main>
+      <article class="post wrap">
+        <header class="post-header">
+          <a class="back-link" href="./blogs.html">All adventures</a>
+          <h1>The False Summit of South Sister</h1>
+          <p class="post-meta">South Sister, Oregon · June 12, 2021</p>
+        </header>
+
+        <div class="post-body">
+          <p class="lede">
+            South Sister had been on my bucket list for a while. Thousands of
+            people make it to the summit each summer. The route is not
+            technical, has no known open crevasses, and has a pretty "mellow"
+            slope. Still, that does not make it an easy hike: you gain over
+            4,000 ft in just 6 miles, with the real climbing packed into the
+            final 3 miles. Knowing it would be a challenge, I trained on one of
+            the more difficult trails up Spencer Butte, a local mountain in
+            Eugene. My training route gains about 1,000 ft in 0.71 miles,
+            roughly matching the steepest part of the South Sister Summit Trail.
+            After training for about two months, I decided to scout the trail on
+            June 12. My plan was to practice some route-finding and reach the
+            plateau.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/spencer.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/spencer.jpeg"
+              alt="View from the top of Spencer Butte, the local training hike near Eugene"
+              fetchpriority="high"
+            />
+            <figcaption>
               The summit of Spencer Butte at 2,000 ft. The Three Sisters, Mt.
               Bachelor, and Mt. Washington are visible on a clear day.
             </figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-              I left Eugene around 6 in the morning, and the drive to the
-              trailhead took about 2.5 hours. As I got closer, I started to worry
-              about the thick clouds hanging over the summit. They could create
-              whiteout conditions at higher elevations. After eating breakfast
-              in the parking lot, I started my journey. The first portion of the
-              trail runs through a forest, and because it was still early in the
-              season, deep snow covered the trail. About a quarter-mile in, as
-              the trail grew steeper, I put on my microspikes. This section
-              should be easy in summer without the snow, but early in the
-              season, it takes some route-finding to make your way out of the
-              forest.
-            </p>
-          </center>
+          <p>
+            I left Eugene around 6 in the morning, and the drive to the
+            trailhead took about 2.5 hours. As I got closer, I started to worry
+            about the thick clouds hanging over the summit. They could create
+            whiteout conditions at higher elevations. After eating breakfast in
+            the parking lot, I started my journey. The first portion of the
+            trail runs through a forest, and because it was still early in the
+            season, deep snow covered the trail. About a quarter-mile in, as the
+            trail grew steeper, I put on my microspikes. This section should be
+            easy in summer without the snow, but early in the season, it takes
+            some route-finding to make your way out of the forest.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/start.jpeg" class="center" />
-            <figcaption align="center">
-              The snow-covered trail.
-            </figcaption>
+            <img
+              src="./images/SouthSister/start.jpeg"
+              alt="Deep snow burying the path through the forest"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The snow-covered trail.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/slope.jpeg" class="center" />
-            <figcaption align="center">A little route-finding required.</figcaption>
+            <img
+              src="./images/SouthSister/slope.jpeg"
+              alt="A snowy slope in the trees with no visible tread to follow"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>A little route-finding required.</figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-              After making it out of the forest, I reached the plateau. One of
-              the best parts of any climb is emerging above the tree line and
-              watching the view suddenly open up. From the plateau, I got my
-              first glimpse of South Sister, and the mountain looked
-              magnificent. I could see clouds moving above the summit.
-              Everything was quiet, with the snow absorbing every sound. My
-              immediate thought was, "Am I really going to climb this?" Since my
-              stamina felt good and I had no signs of altitude sickness, I
-              decided to push as far as I could.
-            </p>
-          </center>
+          <p>
+            After making it out of the forest, I reached the plateau. One of the
+            best parts of any climb is emerging above the tree line and watching
+            the view suddenly open up. From the plateau, I got my first glimpse
+            of South Sister, and the mountain looked magnificent. I could see
+            clouds moving above the summit. Everything was quiet, with the snow
+            absorbing every sound. My immediate thought was, "Am I really going
+            to climb this?" Since my stamina felt good and I had no signs of
+            altitude sickness, I decided to push as far as I could.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/first.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/first.jpeg"
+              alt="South Sister coming into sight above the tree line"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               My first glimpse of South Sister from the plateau.
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/closer.jpeg" class="center" />
-            <figcaption align="center">
-              Getting closer to the mountain.
-            </figcaption>
+            <img
+              src="./images/SouthSister/closer.jpeg"
+              alt="The snowy bulk of the mountain filling the view ahead"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Getting closer to the mountain.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/broken.jpeg" class="center" />
-            <figcaption align="center">Broken Top from the plateau.</figcaption>
+            <img
+              src="./images/SouthSister/broken.jpeg"
+              alt="The jagged outline of Broken Top across the snowfield"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Broken Top from the plateau.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/Moraine.jpeg" class="center" />
-            <figcaption align="center">Moraine Lake, still frozen.</figcaption>
+            <img
+              src="./images/SouthSister/Moraine.jpeg"
+              alt="Ice covering the surface of Moraine Lake in June"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Moraine Lake, still frozen.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/red.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/red.jpeg"
+              alt="Patches of pink-tinted snow stained by algae"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Watermelon snow, also called red snow, is caused by a type of
               algae that lives in cold climates.
             </figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-              The plateau seemed to last forever. Snow started building up
-              between my hiking shoes and microspikes, and my feet grew cold. I
-              met a guy on skis, which looked like a great idea as he cut
-              through the snowfield with ease. After the plateau, the real climb
-              began. The slope grew significantly steeper as I approached Lewis
-              Glacier, which has a 45-degree incline. The higher I climbed, the
-              more the view opened up. Every time I looked back, I could see the
-              entire Cascade Range across central Oregon. As my feet began to
-              slip, I traded my hiking poles for my ice axe, which gave me much
-              more confidence while anchoring myself on the slope. I took my
-              time and kicked steps to make a "staircase" in the snow. I wished
-              I had crampons; they would have helped a lot in that situation.
-            </p>
-          </center>
+          <p>
+            The plateau seemed to last forever. Snow started building up between
+            my hiking shoes and microspikes, and my feet grew cold. I met a guy
+            on skis, which looked like a great idea as he cut through the
+            snowfield with ease. After the plateau, the real climb began. The
+            slope grew significantly steeper as I approached Lewis Glacier,
+            which has a 45-degree incline. The higher I climbed, the more the
+            view opened up. Every time I looked back, I could see the entire
+            Cascade Range across central Oregon. As my feet began to slip, I
+            traded my hiking poles for my ice axe, which gave me much more
+            confidence while anchoring myself on the slope. I took my time and
+            kicked steps to make a "staircase" in the snow. I wished I had
+            crampons; they would have helped a lot in that situation.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/back.jpeg" class="center" />
-            <figcaption align="center">Diamond Peak in the distance.</figcaption>
+            <img
+              src="./images/SouthSister/back.jpeg"
+              alt="Diamond Peak far off on the horizon behind the route"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Diamond Peak in the distance.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/bachelor.jpeg" class="center" />
-            <figcaption align="center">Mt. Bachelor to the south.</figcaption>
+            <img
+              src="./images/SouthSister/bachelor.jpeg"
+              alt="Mt. Bachelor standing alone in the view to the south"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mt. Bachelor to the south.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/ice.jpeg" class="center" />
-            <figcaption align="center">
-              Using my ice axe to climb Lewis Glacier.
-            </figcaption>
+            <img
+              src="./images/SouthSister/ice.jpeg"
+              alt="An ice axe planted in the steep snow of Lewis Glacier"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Using my ice axe to climb Lewis Glacier.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/visible.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/visible.jpeg"
+              alt="The top of the mountain appearing beyond the glacier"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               The summit comes into view above Lewis Glacier.
             </figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-              Above Lewis Glacier, the trail flattened out a little and the
-              summit came into view. It looked so close, but it was actually
-              almost another 1,000 ft up. I began pushing toward it, scrambling
-              over scree and large boulders along the way. Nothing was stable! I
-              watched rocks tumble downhill after I stepped on them. Finally, I
-              made it to the "summit." It looked like the top, but when I peered
-              over the other side, there stood the real summit. The clouds had
-              started rolling in again, though, and I did not want to risk it,
-              so I headed back down.
-            </p>
-          </center>
+          <p>
+            Above Lewis Glacier, the trail flattened out a little and the summit
+            came into view. It looked so close, but it was actually almost
+            another 1,000 ft up. I began pushing toward it, scrambling over
+            scree and large boulders along the way. Nothing was stable! I
+            watched rocks tumble downhill after I stepped on them. Finally, I
+            made it to the "summit." It looked like the top, but when I peered
+            over the other side, there stood the real summit. The clouds had
+            started rolling in again, though, and I did not want to risk it, so
+            I headed back down.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/false.jpeg" class="center" />
-            <figcaption align="center">
-              Climbing toward the false summit.
-            </figcaption>
+            <img
+              src="./images/SouthSister/false.jpeg"
+              alt="The final rocky rise that turned out not to be the top"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Climbing toward the false summit.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/stable.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/stable.jpeg"
+              alt="Loose scree and large rocks covering the upper slope"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Scrambling over scree and boulders—nothing was stable!
             </figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/view1.jpeg" class="center" />
-            <figcaption align="center">
-              The view from the false summit.
-            </figcaption>
+            <img
+              src="./images/SouthSister/view1.jpeg"
+              alt="A wide panorama looking out from high on the mountain"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The view from the false summit.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/view2.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/view2.jpeg"
+              alt="Two neighboring Cascade peaks lined up to the north"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               Middle Sister (Hope) and North Sister (Faith) from the false
               summit of South Sister (Charity), as named by the natives.
             </figcaption>
           </figure>
 
-          <center>
-            <p style="width: 900px; text-align: left">
-              I glissaded (butt-skied) down the steep section, which was
-              definitely the best part of the trip. The whole Cascade Range
-              stretched out in front of my feet as I slid down the mountain. At
-              times, I felt myself going a little too fast, so I took the
-              opportunity to practice self-arresting with my ice axe. After
-              about three hours, I made it safely back to my car. I was really
-              proud of myself and felt incredibly accomplished.
-            </p>
-          </center>
+          <p>
+            I glissaded (butt-skied) down the steep section, which was
+            definitely the best part of the trip. The whole Cascade Range
+            stretched out in front of my feet as I slid down the mountain. At
+            times, I felt myself going a little too fast, so I took the
+            opportunity to practice self-arresting with my ice axe. After about
+            three hours, I made it safely back to my car. I was really proud of
+            myself and felt incredibly accomplished.
+          </p>
 
           <figure>
-            <img src="./images/SouthSister/glide.jpeg" class="center" />
-            <figcaption align="center">
-              Glissading down with a breathtaking view.
-            </figcaption>
+            <img
+              src="./images/SouthSister/glide.jpeg"
+              alt="Sliding down the snow slope with the range spread out ahead"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Glissading down with a breathtaking view.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/cloud.jpeg" class="center" />
-            <figcaption align="center">Feeling closer to God.</figcaption>
+            <img
+              src="./images/SouthSister/cloud.jpeg"
+              alt="Clouds drifting past at eye level high on the mountain"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Feeling closer to God.</figcaption>
           </figure>
 
           <figure>
-            <img src="./images/SouthSister/last.jpeg" class="center" />
-            <figcaption align="center">
+            <img
+              src="./images/SouthSister/last.jpeg"
+              alt="A parting view of South Sister from lower down the trail"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
               One last look at South Sister. I still couldn't believe I had been
               up that high.
             </figcaption>
           </figure>
         </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>"A life outdoors is a life well lived."</p>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="./blogs.html">All adventures</a>
+          <a href="../photography/portfolio.html">Photography</a>
+          <a href="../index.html">Home</a>
+        </nav>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
