@@ -1526,9 +1526,6 @@ __/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y___________|__
   /* ----------------------------------------------------------------- boot */
 
   var BANNER = [
-    { text: "brucehrwang.com \u2014 a little corner of the internet", cls: "green" },
-    { text: "", cls: null },
-    { text: "Bruce Wang: mountains, skis, cameras, long drives.", cls: null },
     { text: "Type `help` to get started, `ls` to look around, or `search` / ⌘K to find a page.", cls: "bright" },
     { text: "", cls: null },
   ];
