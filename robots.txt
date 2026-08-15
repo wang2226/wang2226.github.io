@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Build scripts and source lists are not pages.
+Disallow: /tools/
+
+Sitemap: https://brucehrwang.com/sitemap.xml

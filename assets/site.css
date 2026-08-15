@@ -204,6 +204,13 @@ a:hover {
   color: var(--accent);
 }
 
+/* The home link points at the terminal landing page, so it is dressed as a
+   shell command. The visible text is a glyph, hence the aria-label in markup. */
+.nav-home {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0;
+}
+
 /* Theme toggle */
 
 .theme-toggle {
@@ -320,6 +327,8 @@ a:hover {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -713,22 +722,17 @@ a:hover {
   letter-spacing: 0.04em;
 }
 
-/* Gallery: masonry columns so no photo gets cropped. */
+/* Gallery: an even grid rather than masonry columns. Every photo is 3:2, so
+   multi-column balancing only left one column short and the rows ragged. */
 .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
   margin-top: clamp(2rem, 4vw, 3rem);
-  columns: 3 20rem;
-  column-gap: clamp(0.75rem, 1.5vw, 1.25rem);
-}
-
-@media (max-width: 40rem) {
-  .gallery-grid {
-    columns: 1;
-  }
 }
 
 .gallery-grid figure {
-  margin: 0 0 clamp(0.75rem, 1.5vw, 1.25rem);
-  break-inside: avoid;
+  margin: 0;
 }
 
 .photo-card {
@@ -743,8 +747,12 @@ a:hover {
 }
 
 .photo-card img {
+  display: block;
   width: 100%;
-  height: auto;
+  /* Keeps rows even if a photo that is not 3:2 is ever added. The viewer
+     always shows the uncropped frame. */
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   transition: transform 0.55s ease, filter 0.35s ease;
 }
 
@@ -781,10 +789,40 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Lightbox
+   Utilities
    -------------------------------------------------------------------------- */
 
-.lightbox {
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--surface-alt);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Photo viewer
+   -------------------------------------------------------------------------- */
+
+.viewer {
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
@@ -792,83 +830,328 @@ a:hover {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: rgba(9, 10, 12, 0.94);
+  background-color: rgba(9, 10, 12, 0.96);
   color: #fff;
 }
 
-.lightbox::backdrop {
-  background-color: rgba(9, 10, 12, 0.9);
+.viewer::backdrop {
+  background-color: rgba(9, 10, 12, 0.92);
 }
 
-.lightbox__stage {
+.viewer__stage {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: minmax(0, 1fr) auto;
   width: 100%;
   height: 100%;
   padding: clamp(0.75rem, 2vw, 2rem);
-  gap: 0.75rem;
+  /* Leaves room for the keyboard hint pinned to the bottom edge. */
+  padding-bottom: 2.75rem;
+  gap: 0.9rem;
 }
 
-.lightbox__figure {
-  display: grid;
-  place-items: center;
+/* The photo is absolutely positioned inside its row: a percentage max-height
+   does not clamp reliably against a stretched grid item, and an overflowing
+   20-megapixel original would cover the caption. */
+.viewer__figure {
+  position: relative;
   min-height: 0;
   margin: 0;
+  overflow: hidden;
 }
 
-.lightbox__figure img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+.viewer__figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: var(--radius-sm);
 }
 
-.lightbox__caption {
+.viewer__bar {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+}
+
+.viewer__caption {
+  margin: 0;
   color: rgba(255, 255, 255, 0.82);
   font-size: 0.9rem;
   letter-spacing: 0.04em;
   text-align: center;
 }
 
-.lightbox__button {
+.viewer__exif {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.75rem;
+  margin: 0;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+}
+
+.viewer__exif div {
+  display: grid;
+  gap: 0.15rem;
+  justify-items: center;
+}
+
+.viewer__exif dt {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.viewer__exif dd {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-variant-numeric: tabular-nums;
+}
+
+.viewer__controls {
   position: absolute;
+  top: clamp(0.75rem, 2vw, 1.5rem);
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.viewer__button,
+.viewer__nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
-  background-color: rgba(20, 22, 26, 0.6);
+  background-color: rgba(20, 22, 26, 0.65);
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.18s ease, border-color 0.18s ease;
 }
 
-.lightbox__button:hover {
-  background-color: rgba(60, 64, 70, 0.85);
-  border-color: rgba(255, 255, 255, 0.5);
+.viewer__button:hover,
+.viewer__nav:hover {
+  background-color: rgba(70, 74, 82, 0.85);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
-.lightbox__button--close {
-  top: clamp(0.75rem, 2vw, 1.5rem);
-  right: clamp(0.75rem, 2vw, 1.5rem);
+.viewer__button[data-action="exif"] {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
-.lightbox__button--prev {
+.viewer__button[aria-pressed="true"] {
+  background-color: #fff;
+  border-color: #fff;
+  color: #14151a;
+}
+
+.viewer__nav {
+  position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+}
+
+.viewer__nav--prev {
   left: clamp(0.5rem, 2vw, 1.5rem);
-  transform: translateY(-50%);
 }
 
-.lightbox__button--next {
-  top: 50%;
+.viewer__nav--next {
   right: clamp(0.5rem, 2vw, 1.5rem);
-  transform: translateY(-50%);
+}
+
+.viewer__hint {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0.5rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.viewer__hint kbd {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Touch screens get swipe and tap instead, and the space is precious. */
+@media (hover: none), (max-width: 40rem) {
+  .viewer__hint,
+  .viewer__nav {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Command palette
+   -------------------------------------------------------------------------- */
+
+.palette-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.18s ease, border-color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.palette-open:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+@media (max-width: 30rem) {
+  .palette-open kbd {
+    display: none;
+  }
+}
+
+.palette {
+  width: min(40rem, calc(100vw - 2rem));
+  max-width: none;
+  margin: min(12vh, 6rem) auto auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.palette::backdrop {
+  background-color: rgba(12, 13, 16, 0.55);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.palette__field {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.palette__prompt {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1rem;
+}
+
+.palette__input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  /* 16px keeps iOS from zooming the page when the field takes focus. */
+  font-size: 1rem;
+}
+
+.palette__input:focus {
+  outline: none;
+}
+
+.palette__input::placeholder {
+  color: var(--text-muted);
+}
+
+.palette__results {
+  max-height: min(24rem, 56vh);
+  margin: 0;
+  padding: 0.4rem;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.palette__group {
+  padding: 0.7rem 0.85rem 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.palette__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.palette__item[aria-selected="true"] {
+  background-color: var(--accent-soft);
+}
+
+.palette__item[aria-selected="true"] .palette__title {
+  color: var(--accent-strong);
+}
+
+.palette__title {
+  font-weight: 500;
+}
+
+.palette__meta {
+  flex: 1;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.palette__thumb {
+  flex: none;
+  width: 2.6rem;
+  height: 1.9rem;
+  border-radius: 4px;
+  object-fit: cover;
+  background-color: var(--surface-alt);
+}
+
+.palette__empty {
+  padding: 1.75rem 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.palette__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  padding: 0.6rem 1.15rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.75rem;
 }
 
 /* --------------------------------------------------------------------------

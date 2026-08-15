@@ -3,17 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ski Montana</title>
+    <title>Ski Montana — Bridger Bowl and Big Sky</title>
     <meta
       name="description"
       content="A tribute to a 69-day ski season based in Bozeman, Montana, from the ridge at Bridger to a May ski tour at Beehive Basin."
     />
     <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://brucehrwang.com/blogs/montana.html" />
+    <meta name="author" content="Bruce Wang" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Ski Montana" />
-    <meta property="og:image" content="https://brucehrwang.com/blogs/images/ski22/cover.jpeg" />
+    <meta property="og:site_name" content="Uphill Pursuit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://brucehrwang.com/blogs/montana.html" />
+    <meta property="og:title" content="Ski Montana — Bridger Bowl and Big Sky" />
+    <meta property="og:description" content="A tribute to a 69-day ski season based in Bozeman, Montana, from the ridge at Bridger to a May ski tour at Beehive Basin." />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/web/ski22/stat.jpeg" />
+    <meta property="og:image:width" content="739" />
+    <meta property="og:image:height" content="1600" />
+    <meta property="og:image:alt" content="A season summary showing total ski days, miles, and vertical feet" />
+    <meta property="article:published_time" content="2024-11-30" />
+    <meta property="article:modified_time" content="2026-08-15" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ski Montana — Bridger Bowl and Big Sky" />
+    <meta name="twitter:description" content="A tribute to a 69-day ski season based in Bozeman, Montana, from the ridge at Bridger to a May ski tour at Beehive Basin." />
+    <meta name="twitter:image" content="https://brucehrwang.com/blogs/images/web/ski22/stat.jpeg" />
+    <meta name="twitter:image:alt" content="A season summary showing total ski days, miles, and vertical feet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://brucehrwang.com/blogs/montana.html#post",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://brucehrwang.com/blogs/montana.html"
+            },
+            "url": "https://brucehrwang.com/blogs/montana.html",
+            "headline": "Ski Montana",
+            "name": "Ski Montana — Bridger Bowl and Big Sky",
+            "description": "A tribute to a 69-day ski season based in Bozeman, Montana, from the ridge at Bridger to a May ski tour at Beehive Basin.",
+            "image": [
+              "https://brucehrwang.com/blogs/images/web/ski22/stat.jpeg",
+              "https://brucehrwang.com/blogs/images/web/ski22/view.jpeg",
+              "https://brucehrwang.com/blogs/images/web/ski22/hike.jpeg",
+              "https://brucehrwang.com/blogs/images/web/ski22/powder.jpeg",
+              "https://brucehrwang.com/blogs/images/web/ski22/chute.jpeg"
+            ],
+            "datePublished": "2024-11-30",
+            "dateModified": "2026-08-15",
+            "author": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "isPartOf": {
+              "@type": "Blog",
+              "@id": "https://brucehrwang.com/blogs/blogs.html#blog",
+              "name": "Uphill Pursuit"
+            },
+            "contentLocation": {
+              "@type": "Place",
+              "name": "Bozeman and Big Sky, Montana"
+            },
+            "temporalCoverage": "2022-03",
+            "keywords": "ski Montana, Bridger Bowl, Big Sky, cold smoke powder",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://brucehrwang.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Adventure Blogs",
+                "item": "https://brucehrwang.com/blogs/blogs.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ski Montana",
+                "item": "https://brucehrwang.com/blogs/montana.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- /SEO -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,8 +155,12 @@
               rel="noopener"
               >YouTube</a
             >
-            <a href="../index.html">Home</a>
+            <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
           </nav>
+          <button class="palette-open" type="button" aria-label="Search the site">
+            <span aria-hidden="true">Search</span>
+            <kbd aria-hidden="true">⌘K</kbd>
+          </button>
           <button
             class="theme-toggle"
             type="button"
@@ -94,8 +199,10 @@
 
           <figure>
             <img
-              src="./images/ski22/stat.jpeg"
+              src="./images/web/ski22/stat.jpeg"
               alt="A season summary showing total ski days, miles, and vertical feet"
+              height="1600"
+              width="739"
               fetchpriority="high"
             />
             <figcaption>My stats for the 2022 ski season.</figcaption>
@@ -103,8 +210,10 @@
 
           <figure>
             <img
-              src="./images/ski22/view.jpeg"
+              src="./images/web/ski22/view.jpeg"
               alt="Mountains seen from the top of the Bridger chairlift"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -115,8 +224,10 @@
 
           <figure>
             <img
-              src="./images/ski22/hike.jpeg"
+              src="./images/web/ski22/hike.jpeg"
               alt="A boot-packed trail skiers climb to reach terrain at Bridger"
+              height="1600"
+              width="848"
               loading="lazy"
               decoding="async"
             />
@@ -127,8 +238,10 @@
 
           <figure>
             <img
-              src="./images/ski22/powder.jpeg"
+              src="./images/web/ski22/powder.jpeg"
               alt="Selfie taken while skiing fresh snow"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -137,8 +250,10 @@
 
           <figure>
             <img
-              src="./images/ski22/chute.jpeg"
+              src="./images/web/ski22/chute.jpeg"
               alt="Clear blue sky above a steep chute at Bridger"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -147,8 +262,10 @@
 
           <figure>
             <img
-              src="./images/ski22/gultch.jpeg"
+              src="./images/web/ski22/gultch.jpeg"
               alt="The snow-filled gulch known as Avalanche Gulch"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -157,8 +274,10 @@
 
           <figure>
             <img
-              src="./images/ski22/avalanche.jpeg"
+              src="./images/web/ski22/avalanche.jpeg"
               alt="Chunks of snow left behind by a springtime slide"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -167,8 +286,10 @@
 
           <figure>
             <img
-              src="./images/ski22/tour.jpeg"
+              src="./images/web/ski22/tour.jpeg"
               alt="Selfie on a backcountry tour at Bridger once the lifts had closed"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -179,8 +300,10 @@
 
           <figure>
             <img
-              src="./images/ski22/deep.jpeg"
+              src="./images/web/ski22/deep.jpeg"
               alt="Untracked snow piled deep on the runs at Red Lodge"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -189,8 +312,10 @@
 
           <figure>
             <img
-              src="./images/ski22/fresh.jpeg"
+              src="./images/web/ski22/fresh.jpeg"
               alt="New snow blanketing the trees at Red Lodge after a spring storm"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -201,8 +326,10 @@
 
           <figure>
             <img
-              src="./images/ski22/closing.jpeg"
+              src="./images/web/ski22/closing.jpeg"
               alt="Skiers gathered at Big Sky for the last day of the season"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -211,8 +338,10 @@
 
           <figure>
             <img
-              src="./images/ski22/beehive.jpeg"
+              src="./images/web/ski22/beehive.jpeg"
               alt="Touring uphill through Beehive Basin in late spring"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -228,9 +357,11 @@
         <nav class="site-footer__links" aria-label="Footer">
           <a href="./blogs.html">All adventures</a>
           <a href="../photography/portfolio.html">Photography</a>
-          <a href="../index.html">Home</a>
+          <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/search-index.js"></script>
+    <script src="../assets/palette.js"></script>
   </body>
 </html>

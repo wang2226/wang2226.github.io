@@ -3,17 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ski Colorado</title>
+    <title>Ski Colorado — Breckenridge, Vail and Keystone</title>
     <meta
       name="description"
       content="A first ski trip to Colorado, exploring Vail, Breckenridge, and Keystone, where the Bergman lift leads to a 12,000-foot peak."
     />
     <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://brucehrwang.com/blogs/colorado.html" />
+    <meta name="author" content="Bruce Wang" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Ski Colorado" />
-    <meta property="og:image" content="https://brucehrwang.com/blogs/images/colorado/breck.jpeg" />
+    <meta property="og:site_name" content="Uphill Pursuit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://brucehrwang.com/blogs/colorado.html" />
+    <meta property="og:title" content="Ski Colorado — Breckenridge, Vail and Keystone" />
+    <meta property="og:description" content="A first ski trip to Colorado, exploring Vail, Breckenridge, and Keystone, where the Bergman lift leads to a 12,000-foot peak." />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/web/colorado/bowl.jpeg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Wide open snow in the back bowls of Vail" />
+    <meta property="article:published_time" content="2024-11-29" />
+    <meta property="article:modified_time" content="2026-08-15" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ski Colorado — Breckenridge, Vail and Keystone" />
+    <meta name="twitter:description" content="A first ski trip to Colorado, exploring Vail, Breckenridge, and Keystone, where the Bergman lift leads to a 12,000-foot peak." />
+    <meta name="twitter:image" content="https://brucehrwang.com/blogs/images/web/colorado/bowl.jpeg" />
+    <meta name="twitter:image:alt" content="Wide open snow in the back bowls of Vail" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://brucehrwang.com/blogs/colorado.html#post",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://brucehrwang.com/blogs/colorado.html"
+            },
+            "url": "https://brucehrwang.com/blogs/colorado.html",
+            "headline": "Ski Colorado",
+            "name": "Ski Colorado — Breckenridge, Vail and Keystone",
+            "description": "A first ski trip to Colorado, exploring Vail, Breckenridge, and Keystone, where the Bergman lift leads to a 12,000-foot peak.",
+            "image": [
+              "https://brucehrwang.com/blogs/images/web/colorado/bowl.jpeg",
+              "https://brucehrwang.com/blogs/images/web/colorado/vail.jpeg",
+              "https://brucehrwang.com/blogs/images/web/colorado/chair.jpeg",
+              "https://brucehrwang.com/blogs/images/web/colorado/breck.jpeg",
+              "https://brucehrwang.com/blogs/images/web/colorado/selfie.jpeg"
+            ],
+            "datePublished": "2024-11-29",
+            "dateModified": "2026-08-15",
+            "author": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "isPartOf": {
+              "@type": "Blog",
+              "@id": "https://brucehrwang.com/blogs/blogs.html#blog",
+              "name": "Uphill Pursuit"
+            },
+            "contentLocation": {
+              "@type": "Place",
+              "name": "Breckenridge, Colorado"
+            },
+            "temporalCoverage": "2024-01",
+            "keywords": "ski Colorado, Breckenridge, Vail, Keystone, powder skiing",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://brucehrwang.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Adventure Blogs",
+                "item": "https://brucehrwang.com/blogs/blogs.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ski Colorado",
+                "item": "https://brucehrwang.com/blogs/colorado.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- /SEO -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,8 +155,12 @@
               rel="noopener"
               >YouTube</a
             >
-            <a href="../index.html">Home</a>
+            <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
           </nav>
+          <button class="palette-open" type="button" aria-label="Search the site">
+            <span aria-hidden="true">Search</span>
+            <kbd aria-hidden="true">⌘K</kbd>
+          </button>
           <button
             class="theme-toggle"
             type="button"
@@ -92,8 +197,10 @@
 
           <figure>
             <img
-              src="./images/colorado/bowl.jpeg"
+              src="./images/web/colorado/bowl.jpeg"
               alt="Wide open snow in the back bowls of Vail"
+              height="1200"
+              width="1600"
               fetchpriority="high"
             />
             <figcaption>The legendary back bowls at Vail.</figcaption>
@@ -101,8 +208,10 @@
 
           <figure>
             <img
-              src="./images/colorado/vail.jpeg"
+              src="./images/web/colorado/vail.jpeg"
               alt="Patches of untracked snow left between ski tracks at Vail"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -111,8 +220,10 @@
 
           <figure>
             <img
-              src="./images/colorado/chair.jpeg"
+              src="./images/web/colorado/chair.jpeg"
               alt="A chairlift rising above Tea Cup Bowl"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -121,8 +232,10 @@
 
           <figure>
             <img
-              src="./images/colorado/breck.jpeg"
+              src="./images/web/colorado/breck.jpeg"
               alt="A line of snowy peaks along the Front Range"
+              height="675"
+              width="900"
               loading="lazy"
               decoding="async"
             />
@@ -131,8 +244,10 @@
 
           <figure>
             <img
-              src="./images/colorado/selfie.jpeg"
+              src="./images/web/colorado/selfie.jpeg"
               alt="Selfie on the slopes at Keystone"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -141,8 +256,10 @@
 
           <figure>
             <img
-              src="./images/colorado/bergman.jpeg"
+              src="./images/web/colorado/bergman.jpeg"
               alt="Riding the Bergman lift on the first trip up of the day"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -151,8 +268,10 @@
 
           <figure>
             <img
-              src="./images/colorado/skitip.jpeg"
+              src="./images/web/colorado/skitip.jpeg"
               alt="The historic lodge building where I stayed"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -161,8 +280,10 @@
 
           <figure>
             <img
-              src="./images/colorado/powder.jpeg"
+              src="./images/web/colorado/powder.jpeg"
               alt="A smooth field of fresh snow without a single track"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -178,9 +299,11 @@
         <nav class="site-footer__links" aria-label="Footer">
           <a href="./blogs.html">All adventures</a>
           <a href="../photography/portfolio.html">Photography</a>
-          <a href="../index.html">Home</a>
+          <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/search-index.js"></script>
+    <script src="../assets/palette.js"></script>
   </body>
 </html>

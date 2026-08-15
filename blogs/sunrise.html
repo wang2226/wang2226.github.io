@@ -3,17 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Biking Sunrise Road</title>
+    <title>Biking Sunrise Road — Mount Rainier National Park</title>
     <meta
       name="description"
       content="Riding Sunrise Road in Mount Rainier National Park car-free, a 28-mile round trip with 3,083 feet of climbing."
     />
     <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://brucehrwang.com/blogs/sunrise.html" />
+    <meta name="author" content="Bruce Wang" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Biking Sunrise Road" />
-    <meta property="og:image" content="https://brucehrwang.com/blogs/images/sunrise/mnt.jpeg" />
+    <meta property="og:site_name" content="Uphill Pursuit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://brucehrwang.com/blogs/sunrise.html" />
+    <meta property="og:title" content="Biking Sunrise Road — Mount Rainier National Park" />
+    <meta property="og:description" content="Riding Sunrise Road in Mount Rainier National Park car-free, a 28-mile round trip with 3,083 feet of climbing." />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/web/sunrise/road_1.jpeg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="An empty park road with no cars on it" />
+    <meta property="article:published_time" content="2025-06-29" />
+    <meta property="article:modified_time" content="2026-08-15" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Biking Sunrise Road — Mount Rainier National Park" />
+    <meta name="twitter:description" content="Riding Sunrise Road in Mount Rainier National Park car-free, a 28-mile round trip with 3,083 feet of climbing." />
+    <meta name="twitter:image" content="https://brucehrwang.com/blogs/images/web/sunrise/road_1.jpeg" />
+    <meta name="twitter:image:alt" content="An empty park road with no cars on it" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://brucehrwang.com/blogs/sunrise.html#post",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://brucehrwang.com/blogs/sunrise.html"
+            },
+            "url": "https://brucehrwang.com/blogs/sunrise.html",
+            "headline": "Biking Sunrise Road",
+            "name": "Biking Sunrise Road — Mount Rainier National Park",
+            "description": "Riding Sunrise Road in Mount Rainier National Park car-free, a 28-mile round trip with 3,083 feet of climbing.",
+            "image": [
+              "https://brucehrwang.com/blogs/images/web/sunrise/road_1.jpeg",
+              "https://brucehrwang.com/blogs/images/web/sunrise/bike_1.jpeg",
+              "https://brucehrwang.com/blogs/images/web/sunrise/road_2.jpeg",
+              "https://brucehrwang.com/blogs/images/web/sunrise/bike_2.jpeg",
+              "https://brucehrwang.com/blogs/images/web/sunrise/mnt.jpeg"
+            ],
+            "datePublished": "2025-06-29",
+            "dateModified": "2026-08-15",
+            "author": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "isPartOf": {
+              "@type": "Blog",
+              "@id": "https://brucehrwang.com/blogs/blogs.html#blog",
+              "name": "Uphill Pursuit"
+            },
+            "contentLocation": {
+              "@type": "Place",
+              "name": "Mount Rainier National Park, Washington"
+            },
+            "temporalCoverage": "2025-06",
+            "keywords": "Sunrise Road, Mount Rainier, car-free cycling, road biking Washington",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://brucehrwang.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Adventure Blogs",
+                "item": "https://brucehrwang.com/blogs/blogs.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Biking Sunrise Road",
+                "item": "https://brucehrwang.com/blogs/sunrise.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- /SEO -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,8 +155,12 @@
               rel="noopener"
               >YouTube</a
             >
-            <a href="../index.html">Home</a>
+            <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
           </nav>
+          <button class="palette-open" type="button" aria-label="Search the site">
+            <span aria-hidden="true">Search</span>
+            <kbd aria-hidden="true">⌘K</kbd>
+          </button>
           <button
             class="theme-toggle"
             type="button"
@@ -97,8 +202,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/road_1.jpeg"
+              src="./images/web/sunrise/road_1.jpeg"
               alt="An empty park road with no cars on it"
+              height="1200"
+              width="1600"
               fetchpriority="high"
             />
             <figcaption>
@@ -108,8 +215,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/bike_1.jpeg"
+              src="./images/web/sunrise/bike_1.jpeg"
               alt="A bike on the road among dense evergreens at lower elevation"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -118,8 +227,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/road_2.jpeg"
+              src="./images/web/sunrise/road_2.jpeg"
               alt="The road climbing as the trees thin and the horizon widens"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -128,8 +239,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/bike_2.jpeg"
+              src="./images/web/sunrise/bike_2.jpeg"
               alt="A bike parked at a viewpoint with ranks of mountains behind"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -138,8 +251,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/mnt.jpeg"
+              src="./images/web/sunrise/mnt.jpeg"
               alt="A wide mountain panorama from a high point along the route"
+              height="675"
+              width="900"
               loading="lazy"
               decoding="async"
             />
@@ -148,8 +263,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/fox.jpeg"
+              src="./images/web/sunrise/fox.jpeg"
               alt="A fox standing near the edge of the pavement"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -158,8 +275,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/me.jpeg"
+              src="./images/web/sunrise/me.jpeg"
               alt="Me with the bike after finishing the climb at the top parking area"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -168,8 +287,10 @@
 
           <figure>
             <img
-              src="./images/sunrise/top.jpeg"
+              src="./images/web/sunrise/top.jpeg"
               alt="Looking out over the high end of the road and the peaks beyond"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -185,9 +306,11 @@
         <nav class="site-footer__links" aria-label="Footer">
           <a href="./blogs.html">All adventures</a>
           <a href="../photography/portfolio.html">Photography</a>
-          <a href="../index.html">Home</a>
+          <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/search-index.js"></script>
+    <script src="../assets/palette.js"></script>
   </body>
 </html>

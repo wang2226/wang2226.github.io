@@ -1,201 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>brucehrwang - My little corner on the internet</title>
-    <link rel="icon" href="./images/0_2.ico" type="image/x-ico" sizes="16x16" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bruce Wang — Mountain Adventure Blogs and Photography</title>
+    <meta
+      name="description"
+      content="An interactive terminal by Bruce Wang, linking to trip reports from hiking, skiing, and biking across the Cascades and the Rockies, plus a road trip photography gallery."
+    />
+    <link rel="icon" href="./images/0_2.ico" type="image/x-icon" sizes="16x16" />
 
-    <style>
-      html {
-        background: url(./images/0_0.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    <!-- SEO -->
+    <link rel="alternate" type="application/rss+xml" title="Adventure blogs" href="https://brucehrwang.com/feed.xml" />
+    <link rel="canonical" href="https://brucehrwang.com/" />
+    <meta name="author" content="Bruce Wang" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Uphill Pursuit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://brucehrwang.com/" />
+    <meta property="og:title" content="Bruce Wang — Mountain Adventure Blogs and Photography" />
+    <meta property="og:description" content="An interactive terminal by Bruce Wang, linking to trip reports from hiking, skiing, and biking across the Cascades and the Rockies, plus a road trip photography gallery." />
+    <meta property="og:image" content="https://brucehrwang.com/images/web/8.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" content="Sunrise over a mountain lake, shot on a road trip" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bruce Wang — Mountain Adventure Blogs and Photography" />
+    <meta name="twitter:description" content="An interactive terminal by Bruce Wang, linking to trip reports from hiking, skiing, and biking across the Cascades and the Rockies, plus a road trip photography gallery." />
+    <meta name="twitter:image" content="https://brucehrwang.com/images/web/8.jpg" />
+    <meta name="twitter:image:alt" content="Sunrise over a mountain lake, shot on a road trip" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://brucehrwang.com/#website",
+            "url": "https://brucehrwang.com/",
+            "name": "brucehrwang.com",
+            "description": "An interactive terminal by Bruce Wang, linking to trip reports from hiking, skiing, and biking across the Cascades and the Rockies, plus a road trip photography gallery.",
+            "inLanguage": "en",
+            "publisher": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://brucehrwang.com/#bruce",
+            "name": "Bruce Wang",
+            "url": "https://brucehrwang.com/",
+            "sameAs": [
+              "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+            ]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://brucehrwang.com/#profile",
+            "url": "https://brucehrwang.com/",
+            "name": "Bruce Wang — Mountain Adventure Blogs and Photography",
+            "description": "An interactive terminal by Bruce Wang, linking to trip reports from hiking, skiing, and biking across the Cascades and the Rockies, plus a road trip photography gallery.",
+            "isPartOf": {
+              "@id": "https://brucehrwang.com/#website"
+            },
+            "mainEntity": {
+              "@id": "https://brucehrwang.com/#bruce"
+            }
+          }
+        ]
       }
-    </style>
+    </script>
+    <!-- /SEO -->
+
+    <link rel="stylesheet" href="./assets/terminal.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LCVSV9GF0S");
+    </script>
+
+    <script src="./assets/terminal.js" defer></script>
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCVSV9GF0S"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-LCVSV9GF0S');
-  </script>
-
-  <style>
-    a:link {
-      color: lime;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    a:visited {
-      color: lime;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: red;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    a:active {
-      color: white;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    .nav {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .nav li {
-      display: inline;
-    }
-
-    .nav a {
-      display: inline-block;
-      padding: 10px;
-    }
-
-    li a {
-      display: inline;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: transparent;
-    }
-
-    .active {
-      background-color: transparent;
-    }
-  </style>
-
   <body>
-    <style>
-      .string-highlight {
-        color: lime;
-      }
+    <main class="terminal" id="terminal">
+      <div
+        class="terminal__scrollback"
+        id="scrollback"
+        role="log"
+        aria-live="polite"
+        aria-label="Terminal output"
+      >
+        <!-- The shell types this same greeting on boot and then takes over. It
+             is written out here so the page still says who I am and where to go
+             without JavaScript, and so crawlers see more than an empty div. -->
+        <div class="terminal__boot" id="boot">
+          <h1 class="line green">brucehrwang.com — a little corner of the internet</h1>
+          <p class="line">Bruce Wang: mountains, skis, cameras, long drives.</p>
+          <p class="line bright">Type `help` to get started, or `ls` to look around.</p>
+          <p class="line"></p>
+          <p class="line">
+            <a href="./blogs/blogs.html">blogs/</a> — trip reports from hiking,
+            skiing, ski mountaineering, and biking in the Cascades and the Rockies.
+          </p>
+          <p class="line">
+            <a href="./photography/portfolio.html">photography/</a> — road trips,
+            national parks, and long light, shot on a Canon 5D Mark II.
+          </p>
+          <p class="line">
+            <a
+              href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              target="_blank"
+              rel="noopener"
+              >youtube</a
+            >
+            — the same trips, with movement and sound.
+          </p>
+        </div>
+      </div>
 
-      #typewriter {
-        font-size: 120%;
-        margin: 0;
-        font-family: "Courier";
-      }
+      <div class="terminal__prompt" id="prompt-line">
+        <label class="visually-hidden" for="term-input">Terminal command input</label>
+        <span class="prompt" id="prompt-label" aria-hidden="true"></span>
+        <span class="terminal__field">
+          <span class="terminal__rendered" id="rendered" aria-hidden="true"></span>
+          <input
+            id="term-input"
+            class="terminal__input"
+            type="text"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="none"
+            spellcheck="false"
+            enterkeyhint="go"
+          />
+        </span>
+      </div>
 
-      #typewriter:after {
-        content: "|";
-        color: white;
-        -webkit-animation: blink 500ms linear infinite alternate;
-        animation: blink 500ms linear infinite alternate;
-      }
+      <div class="terminal__overlay" id="overlay" aria-hidden="true" hidden></div>
+    </main>
 
-      @-webkit-keyframes blink {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes blink {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-
-    <pre id="typewriter">
-<span class="string-highlight">$ ls</span>
-<span class="string-highlight">$ Links: </span> <a href="https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ" target="_blank">YouTube</a>  <a href="./photography/portfolio.html" target="_blank">Photography</a>   <a href="./blogs/blogs.html" target="_blank">Adventure Blogs</a>   <a href="https://www.subiefest.com/midwest/member/91111?car_id=77538&types=car_show&year=2024" target="_blank">Subiefest Midwest</a>
-<span class="string-highlight">$ </span> </pre>
-<span class="string-highlight">$ </span> </pre>
-
-    <script>
-      function setupTypewriter(t) {
-        var HTML = t.innerHTML;
-
-        t.innerHTML = "";
-
-        var cursorPosition = 0,
-          tag = "",
-          writingTag = false,
-          tagOpen = false,
-          typeSpeed = 1,
-          tempTypeSpeed = 0;
-
-        var type = function () {
-          if (writingTag === true) {
-            tag += HTML[cursorPosition];
-          }
-
-          if (HTML[cursorPosition] === "<") {
-            tempTypeSpeed = 0;
-            if (tagOpen) {
-              tagOpen = false;
-              writingTag = true;
-            } else {
-              tag = "";
-              tagOpen = true;
-              writingTag = true;
-              tag += HTML[cursorPosition];
-            }
-          }
-          if (!writingTag && tagOpen) {
-            tag.innerHTML += HTML[cursorPosition];
-          }
-          if (!writingTag && !tagOpen) {
-            if (HTML[cursorPosition] === " ") {
-              tempTypeSpeed = 0;
-            } else {
-              tempTypeSpeed = Math.random() * typeSpeed + 5;
-            }
-            t.innerHTML += HTML[cursorPosition];
-          }
-          if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = Math.random() * typeSpeed + 5;
-            writingTag = false;
-            if (tagOpen) {
-              var newSpan = document.createElement("span");
-              t.appendChild(newSpan);
-              newSpan.innerHTML = tag;
-              tag = newSpan.firstChild;
-            }
-          }
-
-          cursorPosition += 1;
-          if (cursorPosition < HTML.length - 1) {
-            setTimeout(type, tempTypeSpeed);
-          }
-        };
-
-        return {
-          type: type,
-        };
-      }
-
-      var typer = document.getElementById("typewriter");
-
-      typewriter = setupTypewriter(typewriter);
-
-      typewriter.type();
-    </script>
+    <nav class="chips" id="chips" aria-label="Quick commands"></nav>
   </body>
 </html>

@@ -1,0 +1,311 @@
+:root {
+  --term-green: #32cd32;
+  --term-green-dim: #1f7a1f;
+  --term-text: #b9ffb9;
+  --term-bright: #eaffea;
+  --term-muted: #6f9f6f;
+  --term-dir: #6fd3ff;
+  --term-warn: #ffd166;
+  --term-error: #ff6b6b;
+  --term-surface: rgba(0, 12, 4, 0.72);
+  --term-border: rgba(50, 205, 50, 0.35);
+  --term-glow: rgba(50, 205, 50, 0.18);
+  --term-font: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Courier New", monospace;
+  --term-pad: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(../images/0_0.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--term-font);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--term-text);
+  -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.terminal {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  padding: var(--term-pad);
+  background: var(--term-surface);
+  border: 1px solid var(--term-border);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.55), inset 0 0 60px var(--term-glow);
+  backdrop-filter: blur(2px);
+  cursor: text;
+  overflow: hidden;
+}
+
+/* Shrink-to-fit so the prompt follows the output instead of being pinned to the
+   bottom of the box, but still scroll internally once the output fills it. */
+.terminal__scrollback {
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  scrollbar-width: thin;
+  scrollbar-color: var(--term-green-dim) transparent;
+}
+
+.terminal__scrollback::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal__scrollback::-webkit-scrollbar-thumb {
+  background: var(--term-green-dim);
+  border-radius: 4px;
+}
+
+.line {
+  white-space: pre-wrap;
+  margin: 0;
+  min-height: 1.45em;
+}
+
+/* The static greeting uses a heading and paragraphs so the page reads as a
+   document; they still have to look like plain terminal lines. */
+.terminal__boot h1,
+.terminal__boot p {
+  font: inherit;
+  margin: 0;
+}
+
+.terminal__prompt {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  padding-top: 2px;
+}
+
+.terminal__prompt[hidden] {
+  display: none;
+}
+
+.prompt {
+  color: var(--term-green);
+  white-space: pre;
+  flex: 0 0 auto;
+}
+
+.terminal__field {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.terminal__rendered {
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: var(--term-bright);
+  min-height: 1.45em;
+}
+
+/* The real input sits invisibly on top of the rendered text so that mobile
+   keyboards, IME, and selection all behave natively while we draw the cursor. */
+.terminal__input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  caret-color: transparent;
+  font: inherit;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+}
+
+.terminal__input::selection {
+  background: rgba(50, 205, 50, 0.35);
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  background: var(--term-green);
+  color: #000c04;
+  animation: blink 1s steps(1) infinite;
+}
+
+.cursor--idle {
+  animation: none;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--term-green-dim);
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.echo {
+  color: var(--term-bright);
+}
+
+.dim {
+  color: var(--term-muted);
+}
+
+.green {
+  color: var(--term-green);
+}
+
+.bright {
+  color: var(--term-bright);
+}
+
+.dir {
+  color: var(--term-dir);
+  font-weight: 700;
+}
+
+.warn {
+  color: var(--term-warn);
+}
+
+.error {
+  color: var(--term-error);
+}
+
+.terminal a,
+.chips a {
+  color: var(--term-green);
+  text-decoration: underline;
+}
+
+.terminal a:visited {
+  color: var(--term-green);
+}
+
+.terminal a:hover,
+.terminal a:focus-visible {
+  color: red;
+  text-decoration: underline;
+}
+
+.terminal a:active {
+  color: #fff;
+}
+
+.terminal__overlay {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: var(--term-pad);
+  background: rgba(0, 8, 2, 0.94);
+  color: var(--term-green);
+  white-space: pre;
+  overflow: hidden;
+  font: inherit;
+  line-height: 1.15;
+  z-index: 2;
+}
+
+.terminal__overlay[hidden] {
+  display: none;
+}
+
+.overlay-hint {
+  position: absolute;
+  right: var(--term-pad);
+  bottom: var(--term-pad);
+  color: var(--term-muted);
+  font-size: 13px;
+}
+
+.chips {
+  display: none;
+  gap: 8px;
+  flex: 0 0 auto;
+  padding: 0 16px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border: 1px solid var(--term-border);
+  border-radius: 999px;
+  background: rgba(0, 12, 4, 0.72);
+  color: var(--term-green);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.chip:hover,
+.chip:focus-visible {
+  color: #000c04;
+  background: var(--term-green);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --term-pad: 12px;
+  }
+
+  .terminal {
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  .chips {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}

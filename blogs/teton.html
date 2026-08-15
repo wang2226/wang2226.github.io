@@ -3,17 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Biking Grand Teton National Park</title>
+    <title>Biking Grand Teton National Park, Wyoming</title>
     <meta
       name="description"
       content="Riding the paved bike trail in Grand Teton National Park, which runs from Jenny Lake to Jackson, Wyoming, separated from the park road."
     />
     <link rel="icon" href="../images/0_2.ico" type="image/x-icon" />
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://brucehrwang.com/blogs/teton.html" />
+    <meta name="author" content="Bruce Wang" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Biking Grand Teton National Park" />
-    <meta property="og:image" content="https://brucehrwang.com/blogs/images/teton/cover.jpeg" />
+    <meta property="og:site_name" content="Uphill Pursuit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://brucehrwang.com/blogs/teton.html" />
+    <meta property="og:title" content="Biking Grand Teton National Park, Wyoming" />
+    <meta property="og:description" content="Riding the paved bike trail in Grand Teton National Park, which runs from Jenny Lake to Jackson, Wyoming, separated from the park road." />
+    <meta property="og:image" content="https://brucehrwang.com/blogs/images/web/teton/arrive.jpeg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="The start of the bike trail at the trailhead" />
+    <meta property="article:published_time" content="2022-06-28" />
+    <meta property="article:modified_time" content="2026-08-15" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Biking Grand Teton National Park, Wyoming" />
+    <meta name="twitter:description" content="Riding the paved bike trail in Grand Teton National Park, which runs from Jenny Lake to Jackson, Wyoming, separated from the park road." />
+    <meta name="twitter:image" content="https://brucehrwang.com/blogs/images/web/teton/arrive.jpeg" />
+    <meta name="twitter:image:alt" content="The start of the bike trail at the trailhead" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BlogPosting",
+            "@id": "https://brucehrwang.com/blogs/teton.html#post",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://brucehrwang.com/blogs/teton.html"
+            },
+            "url": "https://brucehrwang.com/blogs/teton.html",
+            "headline": "Biking Grand Teton National Park",
+            "name": "Biking Grand Teton National Park, Wyoming",
+            "description": "Riding the paved bike trail in Grand Teton National Park, which runs from Jenny Lake to Jackson, Wyoming, separated from the park road.",
+            "image": [
+              "https://brucehrwang.com/blogs/images/web/teton/arrive.jpeg",
+              "https://brucehrwang.com/blogs/images/web/teton/jenny.jpeg",
+              "https://brucehrwang.com/blogs/images/web/teton/trail.jpeg",
+              "https://brucehrwang.com/blogs/images/web/teton/mt.jpeg",
+              "https://brucehrwang.com/blogs/images/web/teton/view.jpeg"
+            ],
+            "datePublished": "2022-06-28",
+            "dateModified": "2026-08-15",
+            "author": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "@id": "https://brucehrwang.com/#bruce",
+              "name": "Bruce Wang",
+              "url": "https://brucehrwang.com/",
+              "sameAs": [
+                "https://www.youtube.com/channel/UCt2tHvQZmlkzd6xI_DGpMCQ"
+              ]
+            },
+            "isPartOf": {
+              "@type": "Blog",
+              "@id": "https://brucehrwang.com/blogs/blogs.html#blog",
+              "name": "Uphill Pursuit"
+            },
+            "contentLocation": {
+              "@type": "Place",
+              "name": "Grand Teton National Park, Wyoming"
+            },
+            "temporalCoverage": "2021-08-14",
+            "keywords": "Grand Teton National Park, cycling Wyoming, Jenny Lake, Teton Park Road",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://brucehrwang.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Adventure Blogs",
+                "item": "https://brucehrwang.com/blogs/blogs.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Biking Grand Teton National Park, Wyoming",
+                "item": "https://brucehrwang.com/blogs/teton.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- /SEO -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,8 +155,12 @@
               rel="noopener"
               >YouTube</a
             >
-            <a href="../index.html">Home</a>
+            <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
           </nav>
+          <button class="palette-open" type="button" aria-label="Search the site">
+            <span aria-hidden="true">Search</span>
+            <kbd aria-hidden="true">⌘K</kbd>
+          </button>
           <button
             class="theme-toggle"
             type="button"
@@ -98,8 +203,10 @@
 
           <figure>
             <img
-              src="./images/teton/arrive.jpeg"
+              src="./images/web/teton/arrive.jpeg"
               alt="The start of the bike trail at the trailhead"
+              height="1200"
+              width="1600"
               fetchpriority="high"
             />
             <figcaption>Arriving at the trailhead.</figcaption>
@@ -107,8 +214,10 @@
 
           <figure>
             <img
-              src="./images/teton/jenny.jpeg"
+              src="./images/web/teton/jenny.jpeg"
               alt="A clear mountain lake where the trail begins"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -117,8 +226,10 @@
 
           <figure>
             <img
-              src="./images/teton/trail.jpeg"
+              src="./images/web/teton/trail.jpeg"
               alt="The paved path running well away from the park road"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -127,8 +238,10 @@
 
           <figure>
             <img
-              src="./images/teton/mt.jpeg"
+              src="./images/web/teton/mt.jpeg"
               alt="A wall of jagged peaks rising across the valley"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -137,8 +250,10 @@
 
           <figure>
             <img
-              src="./images/teton/view.jpeg"
+              src="./images/web/teton/view.jpeg"
               alt="Open sagebrush flats and mountains seen from the bike path"
+              height="1200"
+              width="1600"
               loading="lazy"
               decoding="async"
             />
@@ -154,9 +269,11 @@
         <nav class="site-footer__links" aria-label="Footer">
           <a href="./blogs.html">All adventures</a>
           <a href="../photography/portfolio.html">Photography</a>
-          <a href="../index.html">Home</a>
+          <a class="nav-home" href="../index.html" aria-label="Home">cd ~</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/search-index.js"></script>
+    <script src="../assets/palette.js"></script>
   </body>
 </html>
