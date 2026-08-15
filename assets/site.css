@@ -883,7 +883,7 @@ kbd {
 }
 
 .viewer__exif {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem 1.75rem;
@@ -895,10 +895,18 @@ kbd {
   font-size: 0.85rem;
 }
 
+.viewer__exif.is-visible {
+  display: flex;
+}
+
 .viewer__exif div {
   display: grid;
   gap: 0.15rem;
   justify-items: center;
+}
+
+.viewer__exif div.is-empty {
+  display: none;
 }
 
 .viewer__exif dt {

@@ -309,3 +309,133 @@ body {
     animation: none;
   }
 }
+
+/* Palette on the terminal page: same chrome as the shell, so ⌘K does not
+   drop the visitor into a different design system. */
+.palette {
+  width: min(40rem, calc(100vw - 2rem));
+  max-width: none;
+  margin: min(12vh, 6rem) auto auto;
+  padding: 0;
+  border: 1px solid var(--term-border);
+  border-radius: 10px;
+  background: #041208;
+  color: var(--term-text);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  font-family: var(--term-font);
+}
+
+.palette::backdrop {
+  background-color: rgba(0, 8, 2, 0.62);
+}
+
+.palette__field {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.15rem;
+  border-bottom: 1px solid var(--term-border);
+}
+
+.palette__prompt {
+  color: var(--term-green);
+}
+
+.palette__input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--term-bright);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.palette__input:focus {
+  outline: none;
+}
+
+.palette__input::placeholder {
+  color: var(--term-muted);
+}
+
+.palette__results {
+  max-height: min(24rem, 56vh);
+  margin: 0;
+  padding: 0.4rem;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.palette__group {
+  padding: 0.7rem 0.85rem 0.35rem;
+  color: var(--term-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.palette__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.palette__item[aria-selected="true"] {
+  background: var(--term-glow);
+}
+
+.palette__item[aria-selected="true"] .palette__title {
+  color: var(--term-green);
+}
+
+.palette__meta {
+  flex: 1;
+  color: var(--term-muted);
+  font-size: 0.82rem;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.palette__thumb {
+  flex: none;
+  width: 2.6rem;
+  height: 1.9rem;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #0a1a0c;
+}
+
+.palette__empty {
+  padding: 1.75rem 0.85rem;
+  color: var(--term-muted);
+  text-align: center;
+}
+
+.palette__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  padding: 0.6rem 1.15rem;
+  border-top: 1px solid var(--term-border);
+  color: var(--term-muted);
+  font-size: 0.75rem;
+}
+
+.palette kbd {
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--term-border);
+  border-radius: 4px;
+  color: var(--term-muted);
+  font-family: inherit;
+  font-size: 0.75rem;
+  text-align: center;
+}

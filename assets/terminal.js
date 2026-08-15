@@ -429,7 +429,7 @@
     run: function () {
       var groups = [
         ["navigating", ["ls", "cd", "pwd", "tree"]],
-        ["reading", ["cat", "open"]],
+        ["reading", ["cat", "open", "search"]],
         ["shell", ["help", "history", "clear", "echo", "exit"]],
         ["system", ["whoami", "date", "uname"]],
       ];
@@ -622,6 +622,23 @@
     if (external) window.open(url, "_blank", "noopener");
     else window.location.href = url;
   }
+
+  define("search", {
+    group: "reading",
+    summary: "search pages, posts, and photos (also ⌘K)",
+    run: function (ctx) {
+      if (typeof window.openSitePalette === "function") {
+        window.openSitePalette();
+        var input = document.querySelector(".palette__input");
+        if (input && ctx.args.length) {
+          input.value = ctx.args.join(" ");
+          input.dispatchEvent(new Event("input"));
+        }
+        return;
+      }
+      print("search: palette is not loaded on this page.", "warn");
+    },
+  });
 
   define("whoami", {
     group: "system",
@@ -1512,7 +1529,7 @@ __/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y___________|__
     { text: "brucehrwang.com \u2014 a little corner of the internet", cls: "green" },
     { text: "", cls: null },
     { text: "Bruce Wang: mountains, skis, cameras, long drives.", cls: null },
-    { text: "Type `help` to get started, or `ls` to look around.", cls: "bright" },
+    { text: "Type `help` to get started, `ls` to look around, or `search` / ⌘K to find a page.", cls: "bright" },
     { text: "", cls: null },
   ];
 

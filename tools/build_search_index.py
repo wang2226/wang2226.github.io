@@ -9,7 +9,7 @@ Crawls the real pages instead of keeping a hand-written list, so the palette
 cannot drift out of sync with the site:
 
   - blog posts     title + location/date meta + a snippet of the opening
-  - standalone pages (home, gallery, now)
+  - standalone pages (home, gallery)
   - gallery photos  location caption + camera settings from the built markup
 
 Run after adding a post or photo:
@@ -73,6 +73,46 @@ def first(pattern, html, group=1):
     return text_of(match.group(group)) if match else ""
 
 
+# Captions use compact labels ("Yellow Stone NP, WY"). Expand them so a
+# visitor typing the ordinary name still finds the photo.
+PLACE_WORDS = {
+    "UT": "Utah",
+    "WY": "Wyoming",
+    "MT": "Montana",
+    "CO": "Colorado",
+    "OR": "Oregon",
+    "WA": "Washington",
+    "TN": "Tennessee",
+    "FL": "Florida",
+    "IN": "Indiana",
+    "IL": "Illinois",
+    "MO": "Missouri",
+    "NV": "Nevada",
+    "NP": "national park",
+    "HWY": "highway",
+    "HWY1": "highway 1 overseas highway",
+    "I-80": "interstate 80",
+}
+
+
+def expand_place(location):
+    extra = []
+    lowered = location.lower()
+    if "yellow stone" in lowered:
+        extra.append("yellowstone")
+    if "smokey" in lowered:
+        extra.append("smoky great smoky mountains")
+    if "rocky mtn" in lowered:
+        extra.append("rocky mountain")
+    if "st louis" in lowered:
+        extra.append("saint louis")
+    if "salt lake" in lowered:
+        extra.append("utah")
+    for token in re.split(r"[\s,]+", location):
+        extra.append(PLACE_WORDS.get(token, ""))
+    return " ".join(part for part in extra if part)
+
+
 def posts():
     entries = []
     for path in sorted(glob.glob(os.path.join(ROOT, "blogs", "*.html"))):
@@ -119,7 +159,7 @@ def photos():
 
         thumb = re.search(r'src="\.\./images/web/([^"]+)"', card)
         location = attr("location")
-        pieces = [attr("date"), attr("camera"), attr("settings")]
+        pieces = [attr("date"), attr("camera"), attr("lens"), attr("settings")]
 
         entries.append(
             {
@@ -127,7 +167,7 @@ def photos():
                 "url": "photography/portfolio.html",
                 "group": "Photos",
                 "meta": " · ".join([p for p in pieces if p][:2]),
-                "keywords": " ".join([location] + pieces),
+                "keywords": " ".join([location, expand_place(location)] + pieces),
                 "photo": position,
                 "thumb": "images/web/" + thumb.group(1) if thumb else None,
             }

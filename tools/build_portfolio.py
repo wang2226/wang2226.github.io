@@ -170,6 +170,7 @@ def figure(photo, sizes, index):
     return """        <figure>
           <a
             class="photo-card"
+            id="photo-{index}"
             href="../images/{name}"
             {data}
           >
@@ -184,6 +185,7 @@ def figure(photo, sizes, index):
           </a>
         </figure>""".format(
         name=name,
+        index=index,
         data="\n            ".join(data),
         width=width,
         height=height,
@@ -417,7 +419,7 @@ TAIL = """          </div>
         </figure>
         <div class="viewer__bar">
           <p class="viewer__caption"></p>
-          <dl class="viewer__exif" hidden>
+          <dl class="viewer__exif">
             <div><dt>Date</dt><dd data-field="date">—</dd></div>
             <div><dt>Camera</dt><dd data-field="camera">—</dd></div>
             <div><dt>Lens</dt><dd data-field="lens">—</dd></div>

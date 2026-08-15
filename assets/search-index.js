@@ -131,7 +131,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "March 25, 2014 · Canon EOS 5D Mark II",
-  "keywords": "Sichuan, China March 25, 2014 Canon EOS 5D Mark II 200mm · f/4 · 1/2000 · ISO 800",
+  "keywords": "Sichuan, China  March 25, 2014 Canon EOS 5D Mark II  200mm · f/4 · 1/2000 · ISO 800",
   "photo": 0,
   "thumb": "images/web/2.jpg"
  },
@@ -140,7 +140,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 10, 2015 · Canon EOS 5D Mark II",
-  "keywords": "Queensland, Australia July 10, 2015 Canon EOS 5D Mark II 88mm · f/2.8 · 1/20 · ISO 125",
+  "keywords": "Queensland, Australia  July 10, 2015 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 88mm · f/2.8 · 1/20 · ISO 125",
   "photo": 1,
   "thumb": "images/web/4.jpg"
  },
@@ -149,7 +149,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 10, 2015 · Canon EOS 5D Mark II",
-  "keywords": "Queensland, Australia July 10, 2015 Canon EOS 5D Mark II 200mm · f/2.8 · 1/2000 · ISO 125",
+  "keywords": "Queensland, Australia  July 10, 2015 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 200mm · f/2.8 · 1/2000 · ISO 125",
   "photo": 2,
   "thumb": "images/web/3.jpg"
  },
@@ -158,7 +158,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 12, 2014 · Canon EOS 5D Mark II",
-  "keywords": "Purdue, IN September 12, 2014 Canon EOS 5D Mark II 27mm · f/2.8 · 1/20 · ISO 800",
+  "keywords": "Purdue, IN Indiana September 12, 2014 Canon EOS 5D Mark II  27mm · f/2.8 · 1/20 · ISO 800",
   "photo": 3,
   "thumb": "images/web/5.jpg"
  },
@@ -167,7 +167,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "October 10, 2014 · Canon EOS 5D Mark II",
-  "keywords": "Purdue, IN October 10, 2014 Canon EOS 5D Mark II 70mm · f/2.8 · 13s · ISO 125",
+  "keywords": "Purdue, IN Indiana October 10, 2014 Canon EOS 5D Mark II  70mm · f/2.8 · 13s · ISO 125",
   "photo": 4,
   "thumb": "images/web/6.jpg"
  },
@@ -176,7 +176,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "December 26, 2015 · Canon EOS 5D Mark II",
-  "keywords": "Chicago, IL December 26, 2015 Canon EOS 5D Mark II 70mm · f/2.8 · 1/640 · ISO 125",
+  "keywords": "Chicago, IL Illinois December 26, 2015 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 70mm · f/2.8 · 1/640 · ISO 125",
   "photo": 5,
   "thumb": "images/web/7.jpg"
  },
@@ -185,7 +185,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "August 10, 2016 · Canon EOS 5D Mark II",
-  "keywords": "St Louis, MO August 10, 2016 Canon EOS 5D Mark II 35mm · f/3.5 · 1/1600 · ISO 125",
+  "keywords": "St Louis, MO saint louis Missouri August 10, 2016 Canon EOS 5D Mark II  35mm · f/3.5 · 1/1600 · ISO 125",
   "photo": 6,
   "thumb": "images/web/8.jpg"
  },
@@ -194,7 +194,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "August 13, 2016 · Canon EOS 5D Mark II",
-  "keywords": "Rocky Mtn NP, CO August 13, 2016 Canon EOS 5D Mark II 70mm · f/3.5 · 1/1250 · ISO 125",
+  "keywords": "Rocky Mtn NP, CO rocky mountain national park Colorado August 13, 2016 Canon EOS 5D Mark II  70mm · f/3.5 · 1/1250 · ISO 125",
   "photo": 7,
   "thumb": "images/web/9.jpg"
  },
@@ -203,7 +203,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "August 13, 2016 · Canon EOS 5D Mark II",
-  "keywords": "Rocky Mtn NP, CO August 13, 2016 Canon EOS 5D Mark II 25mm · f/3.5 · 1/1600 · ISO 125",
+  "keywords": "Rocky Mtn NP, CO rocky mountain national park Colorado August 13, 2016 Canon EOS 5D Mark II  25mm · f/3.5 · 1/1600 · ISO 125",
   "photo": 8,
   "thumb": "images/web/10.jpg"
  },
@@ -212,7 +212,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "August 15, 2017 · Canon EOS 5D Mark II",
-  "keywords": "Great Smokey Mtn NP, TN August 15, 2017 Canon EOS 5D Mark II 24mm · f/2.8 · 1/3200 · ISO 100",
+  "keywords": "Great Smokey Mtn NP, TN smoky great smoky mountains national park Tennessee August 15, 2017 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/2.8 · 1/3200 · ISO 100",
   "photo": 9,
   "thumb": "images/web/11.jpg"
  },
@@ -221,7 +221,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "May 13, 2017 · Canon EOS 5D Mark II",
-  "keywords": "Yellow Stone NP, WY May 13, 2017 Canon EOS 5D Mark II 200mm · f/2.8 · 1/2500 · ISO 100",
+  "keywords": "Yellow Stone NP, WY yellowstone national park Wyoming May 13, 2017 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 200mm · f/2.8 · 1/2500 · ISO 100",
   "photo": 10,
   "thumb": "images/web/13.jpg"
  },
@@ -230,7 +230,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "May 14, 2017 · Canon EOS 5D Mark II",
-  "keywords": "Yellow Stone NP, WY May 14, 2017 Canon EOS 5D Mark II 155mm · f/2.8 · 1/3200 · ISO 100",
+  "keywords": "Yellow Stone NP, WY yellowstone national park Wyoming May 14, 2017 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 155mm · f/2.8 · 1/3200 · ISO 100",
   "photo": 11,
   "thumb": "images/web/14.jpg"
  },
@@ -239,7 +239,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "May 17, 2017 · Canon EOS 5D Mark II",
-  "keywords": "Grand Teton NP, WY May 17, 2017 Canon EOS 5D Mark II 34mm · f/2.8 · 1/4000 · ISO 100",
+  "keywords": "Grand Teton NP, WY national park Wyoming May 17, 2017 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 34mm · f/2.8 · 1/4000 · ISO 100",
   "photo": 12,
   "thumb": "images/web/15.jpg"
  },
@@ -248,7 +248,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "August 12, 2017 · Canon EOS 5D Mark II",
-  "keywords": "HWY1, FL August 12, 2017 Canon EOS 5D Mark II 62mm · f/2.8 · 1/2000 · ISO 100",
+  "keywords": "HWY1, FL highway 1 overseas highway Florida August 12, 2017 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 62mm · f/2.8 · 1/2000 · ISO 100",
   "photo": 13,
   "thumb": "images/web/16.jpg"
  },
@@ -257,7 +257,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 6, 2019 · Canon EOS 5D Mark II",
-  "keywords": "Tokyo, Japan July 6, 2019 Canon EOS 5D Mark II 67mm · f/2.8 · 1/2000 · ISO 100",
+  "keywords": "Tokyo, Japan  July 6, 2019 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 67mm · f/2.8 · 1/2000 · ISO 100",
   "photo": 14,
   "thumb": "images/web/17.jpg"
  },
@@ -266,7 +266,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 3, 2019 · Canon EOS 5D Mark II",
-  "keywords": "Tokyo, Japan July 3, 2019 Canon EOS 5D Mark II 38mm · f/3.2 · 1/30 · ISO 1600",
+  "keywords": "Tokyo, Japan  July 3, 2019 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 38mm · f/3.2 · 1/30 · ISO 1600",
   "photo": 15,
   "thumb": "images/web/18.jpg"
  },
@@ -275,7 +275,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "March 20, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Crater Lake NP, OR March 20, 2020 Canon EOS 5D Mark II 48mm · f/3.2 · 1/3200 · ISO 100",
+  "keywords": "Crater Lake NP, OR national park Oregon March 20, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 48mm · f/3.2 · 1/3200 · ISO 100",
   "photo": 16,
   "thumb": "images/web/20.jpg"
  },
@@ -284,7 +284,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "March 20, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Crater Lake NP, OR March 20, 2020 Canon EOS 5D Mark II 24mm · f/3.2 · 1/2000 · ISO 100",
+  "keywords": "Crater Lake NP, OR national park Oregon March 20, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/3.2 · 1/2000 · ISO 100",
   "photo": 17,
   "thumb": "images/web/21.jpg"
  },
@@ -293,7 +293,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "April 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "HWY 101, OR April 18, 2020 Canon EOS 5D Mark II 52mm · f/2.8 · 1/1600 · ISO 100",
+  "keywords": "HWY 101, OR highway Oregon April 18, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 52mm · f/2.8 · 1/1600 · ISO 100",
   "photo": 18,
   "thumb": "images/web/22.jpg"
  },
@@ -302,7 +302,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "April 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "HWY 101, OR April 18, 2020 Canon EOS 5D Mark II 125mm · f/2.8 · 1/2500 · ISO 100",
+  "keywords": "HWY 101, OR highway Oregon April 18, 2020 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 125mm · f/2.8 · 1/2500 · ISO 100",
   "photo": 19,
   "thumb": "images/web/24.jpg"
  },
@@ -311,7 +311,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "April 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "HWY 101, OR April 18, 2020 Canon EOS 5D Mark II 28mm · f/2.8 · 1/1250 · ISO 100",
+  "keywords": "HWY 101, OR highway Oregon April 18, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 28mm · f/2.8 · 1/1250 · ISO 100",
   "photo": 20,
   "thumb": "images/web/25.jpg"
  },
@@ -320,7 +320,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 11, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Glacier NP, MT July 11, 2020 Canon EOS 5D Mark II 43mm · f/3.5 · 1/1250 · ISO 100",
+  "keywords": "Glacier NP, MT national park Montana July 11, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 43mm · f/3.5 · 1/1250 · ISO 100",
   "photo": 21,
   "thumb": "images/web/26.jpg"
  },
@@ -329,7 +329,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 11, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Glacier NP, MT July 11, 2020 Canon EOS 5D Mark II 57mm · f/3.5 · 1/200 · ISO 100",
+  "keywords": "Glacier NP, MT national park Montana July 11, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 57mm · f/3.5 · 1/200 · ISO 100",
   "photo": 22,
   "thumb": "images/web/27.jpg"
  },
@@ -338,7 +338,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 12, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Glacier NP, MT July 12, 2020 Canon EOS 5D Mark II 200mm · f/4 · 1/2000 · ISO 100",
+  "keywords": "Glacier NP, MT national park Montana July 12, 2020 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 200mm · f/4 · 1/2000 · ISO 100",
   "photo": 23,
   "thumb": "images/web/28.jpg"
  },
@@ -347,7 +347,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 16, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Grand Teton NP, WY July 16, 2020 Canon EOS 5D Mark II 200mm · f/3.5 · 1/2000 · ISO 100",
+  "keywords": "Grand Teton NP, WY national park Wyoming July 16, 2020 Canon EOS 5D Mark II EF 70–200mm f/2.8L IS II USM 200mm · f/3.5 · 1/2000 · ISO 100",
   "photo": 24,
   "thumb": "images/web/29.jpg"
  },
@@ -356,7 +356,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 16, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Grand Teton NP, WY July 16, 2020 Canon EOS 5D Mark II 45mm · f/2.8 · 3.2s · ISO 1250",
+  "keywords": "Grand Teton NP, WY national park Wyoming July 16, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 45mm · f/2.8 · 3.2s · ISO 1250",
   "photo": 25,
   "thumb": "images/web/30.jpg"
  },
@@ -365,7 +365,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 16, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Grand Teton NP, WY July 16, 2020 Canon EOS 5D Mark II 62mm · f/2.8 · 25s · ISO 800",
+  "keywords": "Grand Teton NP, WY national park Wyoming July 16, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 62mm · f/2.8 · 25s · ISO 800",
   "photo": 26,
   "thumb": "images/web/31.jpg"
  },
@@ -374,7 +374,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 17, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Great Salt Lake, UT July 17, 2020 Canon EOS 5D Mark II 70mm · f/4 · 1/2000 · ISO 100",
+  "keywords": "Great Salt Lake, UT utah Utah July 17, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 70mm · f/4 · 1/2000 · ISO 100",
   "photo": 27,
   "thumb": "images/web/32.jpg"
  },
@@ -383,7 +383,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 17, 2020 · Canon EOS 5D Mark II",
-  "keywords": "I-80, UT July 17, 2020 Canon EOS 5D Mark II 24mm · f/4 · 1/2000 · ISO 100",
+  "keywords": "I-80, UT interstate 80 Utah July 17, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/4 · 1/2000 · ISO 100",
   "photo": 28,
   "thumb": "images/web/33.jpg"
  },
@@ -392,7 +392,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "July 17, 2020 · Canon EOS 5D Mark II",
-  "keywords": "I-80, UT July 17, 2020 Canon EOS 5D Mark II 70mm · f/4 · 1/800 · ISO 100",
+  "keywords": "I-80, UT interstate 80 Utah July 17, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 70mm · f/4 · 1/800 · ISO 100",
   "photo": 29,
   "thumb": "images/web/34.jpg"
  },
@@ -401,7 +401,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 15, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Salt Lake City, UT September 15, 2020 Canon EOS 5D Mark II 24mm · f/3.5 · 2s · ISO 125",
+  "keywords": "Salt Lake City, UT utah Utah September 15, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/3.5 · 2s · ISO 125",
   "photo": 30,
   "thumb": "images/web/35.jpg"
  },
@@ -410,7 +410,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 12, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Olympic NP, WA September 12, 2020 Canon EOS 5D Mark II 25mm · f/2.8 · 1/40 · ISO 125",
+  "keywords": "Olympic NP, WA national park Washington September 12, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 25mm · f/2.8 · 1/40 · ISO 125",
   "photo": 31,
   "thumb": "images/web/36.jpg"
  },
@@ -419,7 +419,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 12, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Olympic NP, WA September 12, 2020 Canon EOS 5D Mark II 24mm · f/4 · 1/2500 · ISO 125",
+  "keywords": "Olympic NP, WA national park Washington September 12, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/4 · 1/2500 · ISO 125",
   "photo": 32,
   "thumb": "images/web/37.jpg"
  },
@@ -428,7 +428,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Arches NP, UT September 18, 2020 Canon EOS 5D Mark II 48mm · f/3.5 · 1/2000 · ISO 100",
+  "keywords": "Arches NP, UT national park Utah September 18, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 48mm · f/3.5 · 1/2000 · ISO 100",
   "photo": 33,
   "thumb": "images/web/38.jpg"
  },
@@ -437,7 +437,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Canyonlands NP, UT September 18, 2020 Canon EOS 5D Mark II 34mm · f/3.5 · 1/400 · ISO 100",
+  "keywords": "Canyonlands NP, UT national park Utah September 18, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 34mm · f/3.5 · 1/400 · ISO 100",
   "photo": 34,
   "thumb": "images/web/39.jpg"
  },
@@ -446,7 +446,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 18, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Canyonlands NP, UT September 18, 2020 Canon EOS 5D Mark II 30mm · f/3.5 · 1/160 · ISO 160",
+  "keywords": "Canyonlands NP, UT national park Utah September 18, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 30mm · f/3.5 · 1/160 · ISO 160",
   "photo": 35,
   "thumb": "images/web/40.jpg"
  },
@@ -455,7 +455,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 19, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Capitol Reef NP, UT September 19, 2020 Canon EOS 5D Mark II 24mm · f/4 · 1/1000 · ISO 100",
+  "keywords": "Capitol Reef NP, UT national park Utah September 19, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/4 · 1/1000 · ISO 100",
   "photo": 36,
   "thumb": "images/web/41.jpg"
  },
@@ -464,7 +464,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 19, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Bryce Canyon NP, UT September 19, 2020 Canon EOS 5D Mark II 24mm · f/3.5 · 1/1000 · ISO 125",
+  "keywords": "Bryce Canyon NP, UT national park Utah September 19, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/3.5 · 1/1000 · ISO 125",
   "photo": 37,
   "thumb": "images/web/42.jpg"
  },
@@ -473,7 +473,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 20, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Zion NP, UT September 20, 2020 Canon EOS 5D Mark II 24mm · f/3.5 · 1/4000 · ISO 125",
+  "keywords": "Zion NP, UT national park Utah September 20, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/3.5 · 1/4000 · ISO 125",
   "photo": 38,
   "thumb": "images/web/43.jpg"
  },
@@ -482,7 +482,7 @@ window.SITE_SEARCH_INDEX = [
   "url": "photography/portfolio.html",
   "group": "Photos",
   "meta": "September 22, 2020 · Canon EOS 5D Mark II",
-  "keywords": "Lake Tahoe, NV September 22, 2020 Canon EOS 5D Mark II 24mm · f/3.5 · 1/1600 · ISO 100",
+  "keywords": "Lake Tahoe, NV Nevada September 22, 2020 Canon EOS 5D Mark II EF 24–70mm f/2.8L USM 24mm · f/3.5 · 1/1600 · ISO 100",
   "photo": 39,
   "thumb": "images/web/44.jpg"
  }

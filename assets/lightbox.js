@@ -16,19 +16,26 @@
   var exif = dialog.querySelector(".viewer__exif");
   var exifButton = dialog.querySelector('[data-action="exif"]');
   var FIELDS = ["date", "camera", "lens", "settings"];
-  var STORAGE_KEY = "viewer-exif";
+  var STORAGE_KEY = "viewer-exif-v2";
   var current = 0;
 
   function detailsWanted() {
     try {
-      return localStorage.getItem(STORAGE_KEY) === "on";
+      var stored = localStorage.getItem(STORAGE_KEY);
+      if (stored === "off") {
+        return false;
+      }
     } catch (error) {
-      return false;
+      /* Private browsing: fall through to the default. */
     }
+    /* Settings are the reason the viewer exists, so they start visible. */
+    return true;
   }
 
   function showDetails(on) {
-    exif.hidden = !on;
+    /* A class, not the hidden attribute: .viewer__exif { display: flex }
+       otherwise wins over [hidden] and the toggle does nothing. */
+    exif.classList.toggle("is-visible", on);
     exifButton.setAttribute("aria-pressed", on ? "true" : "false");
     try {
       localStorage.setItem(STORAGE_KEY, on ? "on" : "off");
@@ -58,8 +65,7 @@
       var value = card.getAttribute("data-" + field);
       var cell = exif.querySelector('[data-field="' + field + '"]');
       cell.textContent = value || "—";
-      /* Hide a row entirely when the photo has no such tag. */
-      cell.parentNode.hidden = !value;
+      cell.parentNode.classList.toggle("is-empty", !value);
     });
 
     preload(current + 1);
@@ -117,7 +123,7 @@
     if (name === "close") {
       dialog.close();
     } else if (name === "exif") {
-      showDetails(exif.hidden);
+      showDetails(!exif.classList.contains("is-visible"));
     } else if (name === "fullscreen") {
       fullscreen();
     }
@@ -131,7 +137,7 @@
       event.preventDefault();
       show(current + 1);
     } else if (event.key === "i" || event.key === "I") {
-      showDetails(exif.hidden);
+      showDetails(!exif.classList.contains("is-visible"));
     } else if (event.key === "f" || event.key === "F") {
       fullscreen();
     }
@@ -161,5 +167,22 @@
     }
     /* Drop the decoded original so a long session does not pile up memory. */
     image.removeAttribute("src");
+    if (/^#photo-\d+$/.test(location.hash)) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
   });
+
+  function openFromHash() {
+    var match = /^#photo-(\d+)$/.exec(location.hash);
+    if (!match) {
+      return;
+    }
+    var index = Number(match[1]);
+    if (cards[index]) {
+      open(index);
+    }
+  }
+
+  window.addEventListener("hashchange", openFromHash);
+  openFromHash();
 })();

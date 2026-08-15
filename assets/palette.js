@@ -340,6 +340,8 @@
     }
   });
 
+  window.openSitePalette = open;
+
   if (TRIGGER) {
     TRIGGER.addEventListener("click", open);
     /* Show the real shortcut for the visitor's platform. */
